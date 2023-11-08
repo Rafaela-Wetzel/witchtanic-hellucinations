@@ -1,110 +1,170 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Code Institute: JavaScript Project by Rafaela Wetzel
 
-Welcome USER_NAME,
+The second milestone project is about creating an interactive front-end website and showcasing the HTML, CSS and JavaScript skills I have attained over the past three months at Code Institute. It is the second out of five projects.  
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Witchtanic Hellucinations
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Table of Contents
 
-## Gitpod Reminders
+- [Code Institute: JavaScript Project by Rafaela Wetzel](#)
+- [Witchtanic Hellucinations](#)
+- [Table of Contents](#table-of-contents)
+- [Live Demo](#live-demo)
+- [UX](#ux)
+  - [User Stories](#user-stories)
+  - [Strategy](#strategy)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+    - [Wireframe](#wireframe)
+  - [Surface](#surface)
+    - [Color Palette](#color-palette)
+- [Technologies](#technologies)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+    - [Navigation Bar](#navigation-bar)
+    - [Section 1](#)
+    - [Section 2](#)
+    - [Section 3](#)
+    - [The Footer: Contact](#the-footer-contact)
+  - [Features Left to Implement](#features-left-to-implement)
+- [Testing](#testing)
+    - [Testing Homepage Functions](#testing-homepage-functions)
+    - [Testing Homepage Responsiveness](#testing-homepage-responsiveness)
+  - [Validator Testing](#validator-testing)
+  - [Lighthouse](#lighthouse)
+  - [Bugs & Problems](#bugs--problems)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Tutorials](#tutorials)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Live Demo 
 
-`python3 -m http.server`
+![A screenshot of the Witchtanic Hellucinations homepage on different screen sizes]()
 
-A blue button should appear to click: _Make Public_,
+**You can see a deployed version of my website [here]()**
 
-Another blue button should appear to click: _Open Browser_.
+# UX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Stories
 
-A blue button should appear to click: _Make Public_,
+A homepage visitor might want to have answers to the following questions:
 
-Another blue button should appear to click: _Open Browser_.
+The target group is people who...
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Strategy
 
-To log into the Heroku toolbelt CLI:
+## Scope
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Structure 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Skeleton
 
-------
+### Wireframe 
 
-## Release History
+<img src="" style="" alt="Balsamiq Wireframe">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Surface
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Color Palette  
+        
+![Witchtanic Hellucinations Color palette]()   
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# Technologies
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Balsamiq for creating a first wireframe  
+- HTML & CSS for creating and styling the homepage  
+- Javascript for adding interactivity to the homepage
+- Lighthouse for checks on performance, accessibility, best practices and SEO  
+- Dev Tools for analyzing the homepage and checking responsiveness on different screen sizes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Features 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Existing Features
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Navigation Bar
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![A screenshot of the navigation bar...]()
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### xyz Section
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![A screenshot of...]()
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### xyz Section
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![A screenshot of...]()
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### xyz Section  
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![A screenshot of...]()
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### The Footer: Contact
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![A screenshot of...]()
 
-------
+## Features Left to Implement
 
-## FAQ about the uptime script
+Some ideas what could be added to the homepage are:
 
-**Why have you added this script?**
+# Testing 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+I have tested the responsiveness of my homepage with Firefox, Google Chrome and Microsoft Edge Dev Tools and checked the following screen sizes: 360px (Galaxy S5 Android 5 on DevTools and my own mobile phone Moto G50), 576px, 768px, 992px and 1200px (DevTools and my own laptop Lenovo ThinkPad X260). I confirm that the actions below work on all screen sizes.
 
-**How will this affect me?**
+## Testing Homepage Functions
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing Homepage Responsiveness
+    
+**360px:** 
+  
+**576px:**  
+  
+**768px:** 
+  
+**992px:**
+  
+**1200px:**
+     
+**General**
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Validator Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- I confirm that no errors were returned when passing through the official [W3C validator](link)
+<br /><br />
+![A screenshot of the HTML W3C Validator result]()  
 
-**So….?**
+- I confirm that no errors were returned when passing through the official [(Jigsaw) validator](link)
+<br /><br />
+![A screenshot of the CSS Jigsaw Validator result]()
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Lighthouse
 
-**Can I opt out?**
+## Bugs & Problems
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Unfixed Bugs
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+# Deployment
 
-**Anything more?**
+The Witchtanic Hellucinations homepage was deployed through GitHub Pages. The steps are as follows:  
+  
+- From the main project page on GitHub, navigate to *Settings*
+- On the left side click on *Pages*
+- Choose *Deploy from a branch*
+- Set the branch to *main* and * */ (root)* and click on *Save* 
+- After a few moments the live link shows at the top of the page.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+It can be found here: 
 
----
+# Credits 
 
-Happy coding!
+## Tutorials 
+
+## Media
+
+## Acknowledgements
+
+- Help and feedback from my mentor Oluwafemi Medale
+- README.md structure taken from [Anjalee Kulasinghe](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/blob/main/README.md)
+- Witchtanic Hellucinations title originally by US-band Acid Witch
