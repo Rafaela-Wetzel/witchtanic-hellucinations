@@ -1,15 +1,62 @@
+/* Google Fonts Import */
 
+@import url('');
 
-.main-heading {
+/* General styles */
+
+body {
 
 }
+
+/* Header & nav styles */
+
+header {
+    
+}
+
+.main-heading {
+   
+}
+
+nav>a {
+    
+}
+
+a:hover {
+    
+}
+
+/* Main styles */
+
+/* Footer */
 
 /* Footnote */
 .footnote-style {
     text-align: center;
     margin-top: 6.2rem;
-    border-top: 2px solid black;
+    border-top: 2px solid #594365;
     padding: 0.3rem 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+/* Media queries */
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+}
+        
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
