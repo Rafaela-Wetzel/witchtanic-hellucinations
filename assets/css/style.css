@@ -1,0 +1,9 @@
+/* Footnote */
+.footnote-style {
+    text-align: center;
+    margin-top: 6.2rem;
+    border-top: 2px solid black;
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
