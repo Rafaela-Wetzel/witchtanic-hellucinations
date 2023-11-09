@@ -1,6 +1,6 @@
 /* Google Fonts Import */
 
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=DM+Serif+Display&display=swap');
 
 /* General styles */
 
@@ -15,7 +15,7 @@ header {
 }
 
 .main-heading {
-   
+   font-family: Creepster;
 }
 
 nav>a {
