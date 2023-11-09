@@ -5,7 +5,7 @@
 /* General styles */
 
 body {
-
+  background-color: #FA7819;
 }
 
 /* Header & nav styles */
@@ -34,7 +34,7 @@ a:hover {
 .footnote-style {
     text-align: center;
     margin-top: 6.2rem;
-    border-top: 2px solid #594365;
+    border-top: 2px solid #000000;
     padding: 0.3rem 1rem;
     display: flex;
     justify-content: space-between;
