@@ -51,23 +51,69 @@ The second milestone project is about creating an interactive front-end website 
 
 ## User Stories
 
-A homepage visitor might want to have answers to the following questions:
-
 The target group is people who...
+- look for spooky amusement
+- like to play online games
+- are fans of horror, supernatural figures & all things dark
 
 ## Strategy
 
+- Design a spooky witch memory card game whose outcome is influenced by the users' effort
+- For entertainment purposes
+- Tells a story
+
 ## Scope
+
+- Game page & contact / feedback page
+- Start button & memory card game
+- Timer that runs out
+- Card match count
+- Spooky sounds & cursor
+- Individual alert messages depending on winning or losing
+
+Maybe at a later point:
+- Levels of difficulty
+
+Take into account:
+- Accessibility / Keyboard-focussable
+
+Interactivity / JavaScript
+- Card unveils when clicking on it (event listener)
+- Two cards are compared with each other
+  - If match, they stay uncovered
+    - Match count increases
+    - If user wins the game
+      - "Happy" end ?
+  - If no match, they are covered again
+    - Match count decreases
+    - Timer: only x seconds to play, if user fails:
+      - Unhappy end
 
 ## Structure 
 
+- Make sure it is easy to understand what the game is about when starting to play
+- Story & memory card game to the right
+- Nagivation bar, picture, sound, timer, card match count to the left
+
 ## Skeleton
+
+- Balsamiq wireframe
+- Position the elements to the left according to priority
+- Contrast in colors between left side (info) and right side (play)
+- Contrast in colors within info section to the left
 
 ### Wireframe 
 
-<img src="" style="" alt="Balsamiq Wireframe">
+<img src="assets/readme-assets/Balsamiq Witchtanic Wireframe.png" style="height:40rem; width:40rem;" alt="Balsamiq Wireframe">
 
 ## Surface
+
+- Spooky fonts
+- Colors: black & neon green? Pumpkin orange?
+- Gnarly witch picture (contact artists)
+- Background picture? 
+- Effects: story alerts depending on outcome of game
+- What can user do? Click start button, play card game, play audio, visit contact section, see GitHub repo
 
 ### Color Palette  
         
