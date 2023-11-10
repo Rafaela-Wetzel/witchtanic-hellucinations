@@ -66,10 +66,8 @@ The target group is people who...
 
 - Game page & contact / feedback page
 - Start button & memory card game
-- Timer that runs out
-- Card match count
 - Spooky sounds & cursor
-- Individual alert messages depending on winning or losing
+- Rules and instructions page? / Help button?
 
 Maybe at a later point:
 - Levels of difficulty
@@ -85,9 +83,13 @@ Interactivity / JavaScript
     - If user wins the game
       - "Happy" end ?
   - If no match, they are covered again
-    - Match count decreases
     - Timer: only x seconds to play, if user fails:
       - Unhappy end
+- Individual alert messages (or modal box windows) depending on winning or losing
+- Timer that runs out
+- Card match count
+- Button to end game in between
+- Shuffling cards function
 
 ## Structure 
 
