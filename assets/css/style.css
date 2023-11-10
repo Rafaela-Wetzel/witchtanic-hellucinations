@@ -43,6 +43,28 @@ a:hover {
 
 /* Main styles */
 
+.matching-cards {
+  display: flex;
+  border: medium solid #000000;
+  flex-wrap: wrap;
+}
+
+.front-card {
+  height: 4rem;
+  width: 4rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border: thin dotted #000000;
+}
+
+.back-card {
+  height: 4rem;
+  width: 4rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border: thin dotted #000000;
+}
+
 /* Footer */
 
 /* Footnote */
