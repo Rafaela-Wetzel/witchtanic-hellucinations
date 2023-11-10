@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Creepster&family=DM+Serif+Display&display=swap');
 
+/* Other fonts
+
+@font-face {
+  font-family: 'Gingerbread House';
+  src: url('../fonts/Gingerbread-House.woff2') format('woff2'),
+       url('../fonts/Gingerbread-House.woff') format('woff');
+} */
+
 /* General styles */
 
 body {
@@ -19,7 +27,7 @@ header {
 
 .main-heading {
    font-family: 'Creepster', 'sans-serif';
-   font-size: 3rem;
+   font-size: 2rem;
 }
 
 nav>a {
