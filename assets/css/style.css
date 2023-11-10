@@ -13,7 +13,7 @@
 
 /* General Styles */
 
-body {
+* {
   background-color: #FA7819;
   text-align: center;
   font-family: 'Black Ops One', 'sans-serif';
@@ -82,6 +82,31 @@ a:hover {
   color: #000000;
 }
 
+/* Contact Page */
+/* Contact Form */
+
+.form-style {
+  font-size: 1.2rem;
+  margin-top: 5rem;
+}
+
+.input-field-style {
+  border: medium double #000;
+  margin: 0.4rem 0;
+}
+
+.input-height {
+  height: 1.5rem;
+}
+
+.button-style {
+  background-color: #000;
+  border: thick outset #6d6772;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+}
+
 /* Media Queries */
 
 /* Media query: large or landscape phones (576px and up) */
@@ -101,30 +126,4 @@ a:hover {
 
 @media screen and (min-width: 1200px) {
 
-}
-
-/* Contact Page */
-/* Contact Form */
-
-.form-style {
-    font-size: 1.2rem;
-    margin-top: 5rem;
-}
-
-.input-field-style {
-    border: medium double #000;
-    margin: 0.4rem 0;
-}
-
-.input-height {
-    height: 1.5rem;
-}
-
-.button-style {
-    background-color: #594365;
-    border: thick outset #795d8c;
-    font-size: 0.9rem;
-    color: #ebe6e0;
-    width: 6rem;
-    height: 2.5rem;
 }
