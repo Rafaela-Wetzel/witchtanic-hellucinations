@@ -45,7 +45,7 @@ The second milestone project is about creating an interactive front-end website 
 
 ![A screenshot of the Witchtanic Hellucinations homepage on different screen sizes]()
 
-**You can see a deployed version of my website [here]()**
+**You can see a deployed version of my website [here](https://rafaela-wetzel.github.io/Witchtanic-Hellucinations/)**
 
 # UX
 
@@ -203,7 +203,7 @@ The Witchtanic Hellucinations homepage was deployed through GitHub Pages. The st
 - Set the branch to *main* and * */ (root)* and click on *Save* 
 - After a few moments the live link shows at the top of the page.
 
-It can be found here: 
+It can be found here: https://rafaela-wetzel.github.io/Witchtanic-Hellucinations/
 
 # Credits 
 

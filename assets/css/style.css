@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Creepster&family=DM+Serif+Display&display=swap');
 
-/* Other fonts
+/* Other Fonts
 
 @font-face {
   font-family: 'Gingerbread House';
@@ -11,7 +11,7 @@
        url('../fonts/Gingerbread-House.woff') format('woff');
 } */
 
-/* General styles */
+/* General Styles */
 
 body {
   background-color: #FA7819;
@@ -19,7 +19,7 @@ body {
   font-family: 'Black Ops One', 'sans-serif';
 }
 
-/* Header & nav styles */
+/* Header & Nav Styles */
 
 header {
     
@@ -41,7 +41,8 @@ a:hover {
     
 }
 
-/* Main styles */
+/* Play Game Page */
+/* Main Styles */
 
 .matching-cards {
   display: flex;
@@ -81,7 +82,7 @@ a:hover {
   color: #000000;
 }
 
-/* Media queries */
+/* Media Queries */
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
@@ -100,4 +101,30 @@ a:hover {
 
 @media screen and (min-width: 1200px) {
 
+}
+
+/* Contact Page */
+/* Contact Form */
+
+.form-style {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+
+.input-field-style {
+    border: medium double #000;
+    margin: 0.4rem 0;
+}
+
+.input-height {
+    height: 1.5rem;
+}
+
+.button-style {
+    background-color: #594365;
+    border: thick outset #795d8c;
+    font-size: 0.9rem;
+    color: #ebe6e0;
+    width: 6rem;
+    height: 2.5rem;
 }
