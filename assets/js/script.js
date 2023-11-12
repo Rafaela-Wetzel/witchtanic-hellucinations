@@ -60,11 +60,11 @@ function startTimer() {
 }
 
 /**
- * Tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek
+ *Tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek
  */
-function revealCard() {
+/*function revealCard() {
   this.classList.toggle('flip');
-}
+}*/
 
 
 /**

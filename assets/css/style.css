@@ -3,14 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Creepster&family=DM+Serif+Display&display=swap');
 
-/* Other Fonts
-
-@font-face {
-  font-family: 'Gingerbread House';
-  src: url('../fonts/Gingerbread-House.woff2') format('woff2'),
-       url('../fonts/Gingerbread-House.woff') format('woff');
-} */
-
 /* General Styles */
 
 * {
@@ -20,10 +12,6 @@
 }
 
 /* Header & Nav Styles */
-
-header {
-    
-}
 
 .main-heading {
    font-family: 'Creepster', 'sans-serif';
@@ -44,21 +32,25 @@ a:hover {
 /* Play Game Page */
 /* Main Styles */
 
+/* How to style HTML5 audio tag: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */
+audio {
+    filter: sepia(90%) saturate(100%) grayscale(1) contrast(100%) invert(100%);
+    width: 15.7rem;
+    height: 2.2rem;
+    color: #FA7819; 
+}
+
+/* How to remove rounded cornes of player: https://stackoverflow.com/questions/60923328/how-to-remove-rounded-corners-of-an-audio-tag-on-chrome-and-mobile-device */
+audio::-webkit-media-controls-enclosure {
+  border-radius: 0;
+  border: medium outset #6d6772;
+}
+
 .matching-cards {
   display: flex;
   flex-direction: row;
   border: medium solid #000000;
   flex-wrap: wrap;
-  perspective: 1000px;
-}
-
-.card-pair {
-  transform-style: preserve-3d;
-  transition: transform .5s;
-}
-
-.single-card.flip {
-  transform: rotateY(180deg);
 }
 
 .front-card,
