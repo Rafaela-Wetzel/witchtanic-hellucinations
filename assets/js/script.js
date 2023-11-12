@@ -11,12 +11,12 @@ function startGame() {
   startTimer();
 }
 
-/**
- * 
+/** How to create a JavaScript timer by:
+ * https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript+
  */
 function startTimer() {
-  let count = 20;
-  let countdown = document.getElementById('timer');
+  let count = 21;
+  let countdown = document.getElementById('timer2');
 const timer = setInterval(function () {
   count--;
   console.log(count);
