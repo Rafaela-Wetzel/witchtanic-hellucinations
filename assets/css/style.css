@@ -52,30 +52,22 @@ a:hover {
   perspective: 1000px;
 }
 
+.card-pair {
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
 .single-card.flip {
   transform: rotateY(180deg);
 }
 
-.front-card {
-  height: 4rem;
-  width: 4rem;
-  margin: 0.25rem;
-  padding: 0.25rem;
-  border: thin dotted #000000;
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  backface-visibility: hidden;
-}
-
+.front-card,
 .back-card {
   height: 4rem;
   width: 4rem;
   margin: 0.25rem;
   padding: 0.25rem;
   border: thin dotted #000000;
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  backface-visibility: hidden;
 }
 
 /* Footer */
@@ -103,7 +95,9 @@ a:hover {
 }
 
 .input-field-style {
-  border: medium double #000;
+  box-shadow: 0.5rem 0.5rem 0.2rem #6d7178;
+  background-color: #000;
+  color: #FA7819;
   margin: 0.4rem 0;
 }
 
