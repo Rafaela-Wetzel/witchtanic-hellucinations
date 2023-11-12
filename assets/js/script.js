@@ -29,9 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('start').addEventListener('click', startGame);
 
-
-
-document.getElementsByClassName('front-card').addEventListener('click', revealCard);
+let allCards = document.getElementsByClassName('single-card');
+for (let i = 0; i < allCards.length; i++) {
+  allCards[i].addEventListener('click', revealCard);
+}
 
 /**
  * 
@@ -59,11 +60,12 @@ function startTimer() {
 }
 
 /**
- * 
+ * Tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek
  */
 function revealCard() {
-  
+  this.classList.toggle('flip');
 }
+
 
 /**
  * 
@@ -142,4 +144,4 @@ function shuffleCards() {
  */
 function endGame() {
 
-}
+} 

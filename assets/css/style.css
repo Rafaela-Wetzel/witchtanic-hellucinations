@@ -49,6 +49,11 @@ a:hover {
   flex-direction: row;
   border: medium solid #000000;
   flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.single-card.flip {
+  transform: rotateY(180deg);
 }
 
 .front-card {
@@ -57,6 +62,9 @@ a:hover {
   margin: 0.25rem;
   padding: 0.25rem;
   border: thin dotted #000000;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  backface-visibility: hidden;
 }
 
 .back-card {
@@ -65,6 +73,9 @@ a:hover {
   margin: 0.25rem;
   padding: 0.25rem;
   border: thin dotted #000000;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  backface-visibility: hidden;
 }
 
 /* Footer */
