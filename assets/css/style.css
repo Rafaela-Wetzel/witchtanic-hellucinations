@@ -56,7 +56,7 @@ a:hover {
   margin: 0.25rem;
   padding: 0.25rem;
   border: thin dotted #000000;
-  display: none;
+  /*display: none;*/
 }
 
 .back-card {
