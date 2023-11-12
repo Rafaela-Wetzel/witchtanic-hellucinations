@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('start').addEventListener('click', startGame);
 
+
+
+document.getElementsByClassName('front-card').addEventListener('click', revealCard);
+
 /**
  * 
  */
@@ -58,7 +62,7 @@ function startTimer() {
  * 
  */
 function revealCard() {
-
+  
 }
 
 /**
