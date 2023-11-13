@@ -64,19 +64,19 @@ audio::-webkit-media-controls-enclosure {
   color: #fff;
 }
 
-.matching-cards {
+.memory-game {
   display: flex;
   flex-direction: row;
   border: medium solid #000000;
   flex-wrap: wrap;
 }
 
-.card-pair {
+.memory-card {
   border: medium solid yellow;
 }
 
-.front-card,
-.back-card {
+.front-face,
+.back-face {
   height: 4rem;
   width: 4rem;
   margin: 0.25rem;
