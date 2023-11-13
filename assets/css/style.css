@@ -7,8 +7,18 @@
 
 * {
   background-color: #FA7819;
-  text-align: center;
   font-family: 'Black Ops One', 'sans-serif';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
 }
 
 /* Header & Nav Styles */
