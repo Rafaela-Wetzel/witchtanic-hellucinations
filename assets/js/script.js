@@ -1,28 +1,3 @@
-let catFront = document.getElementById('cat-front');
-let catBack = document.getElementById('cat-back');
-
-let broomFront = document.getElementById('broom-front');
-let broomBack = document.getElementById('broom-back');
-
-let cauldronFront = document.getElementById('cauldron-front');
-let cauldronBack = document.getElementById('cauldron-back');
-
-let ballFront = document.getElementById('ball-front');
-let ballBack = document.getElementById('ball-back');
-
-let crystalsFront = document.getElementById('crystals-front');
-let crystalsBack = document.getElementById('crystals-back');
-
-let elixirFront = document.getElementById('elixir-front');
-let elixirBack = document.getElementById('elixir-back');
-
-let incenseFront = document.getElementById('incense-front');
-let incenseBack = document.getElementById('incense-back');
-
-let bookFront = document.getElementById('book-front');
-let bookBack = document.getElementById('book-back');
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
 });

@@ -43,7 +43,7 @@ audio {
 /* How to remove rounded cornes of player: https://stackoverflow.com/questions/60923328/how-to-remove-rounded-corners-of-an-audio-tag-on-chrome-and-mobile-device */
 audio::-webkit-media-controls-enclosure {
   border-radius: 0;
-  border: medium outset #6d6772;
+  border: thick outset #6d6772;
 }
 
 .matching-cards {
@@ -51,6 +51,10 @@ audio::-webkit-media-controls-enclosure {
   flex-direction: row;
   border: medium solid #000000;
   flex-wrap: wrap;
+}
+
+.card-pair {
+  border: medium solid yellow;
 }
 
 .front-card,
