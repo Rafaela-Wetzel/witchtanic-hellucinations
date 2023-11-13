@@ -32,7 +32,7 @@ nav>a {
 }
 
 a:hover {
-    
+  color: #fff;    
 }
 
 /* Play Game Page */
@@ -50,6 +50,18 @@ audio {
 audio::-webkit-media-controls-enclosure {
   border-radius: 0;
   border: thick outset #6d6772;
+}
+
+.button-style {
+  background-color: #000;
+  border: thick outset #6d6772;
+  font-size: 0.9rem;
+  color: #FA7819;
+  text-align: center;
+}
+
+.button-style:hover {
+  color: #fff;
 }
 
 .matching-cards {
@@ -105,14 +117,6 @@ audio::-webkit-media-controls-enclosure {
 
 .input-height {
   height: 1.5rem;
-}
-
-.button-style {
-  background-color: #000;
-  border: thick outset #6d6772;
-  font-size: 0.9rem;
-  color: #FA7819;
-  text-align: center;
 }
 
 /* Media Queries */
