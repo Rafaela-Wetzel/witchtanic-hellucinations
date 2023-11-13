@@ -53,30 +53,9 @@ function hideCard() {
  * 
  */
 function compareCards() {
-  if (catFront === catFront ||
-    broomFront === broomFront ||
-    cauldronFront === cauldronFront ||
-    ballFront === ballFront ||
-    crystals === crystalsFront ||
-    elixirFront === elixirFront ||
-    incenseFront === incenseFront ||
-    bookFront === bookFront
-  ) {
-    matchingCards();
-  } else if (
-    catFront === catFront &&
-    broomFront === broomFront &&
-    cauldronFront === cauldronFront &&
-    ballFront === ballFront &&
-    crystals === crystalsFront &&
-    elixirFront === elixirFront &&
-    incenseFront === incenseFront &&
-    bookFront === bookFront
-  ) {
-    winGame();
-  } else {
-    noMatchingCards();
-  }
+  matchingCards(); 
+  winGame();
+  noMatchingCards();
 }
 
 /**
