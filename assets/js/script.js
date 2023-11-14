@@ -29,14 +29,17 @@ function startTimer() {
 
 }
 
-/* Source: Tutorial [1] - Making the cards flip*/
+/* Source Begin: Tutorial [1] */
+
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-
+/** 
+ * Makes the cards flip 
+ */
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -44,24 +47,33 @@ function flipCard() {
   this.classList.toggle('flip');
 
   if (!hasFlippedCard) {
-    // first click
+    // First click
     hasFlippedCard = true;
     firstCard = this;
 
     return;
   }
-  // second click
+  // Second click 
   hasFlippedCard = false;
   secondCard = this;
 
   checkForMatch();
 }
 
+/**
+ * Checks if the cards match
+ * if they don't match unflipCards is called
+ * 
+ */
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   isMatch ? disableCards() : unflipCards();
 }
 
+/**
+ * Accomplishes that the matching card pairs 
+ * stay uncovered and can be clicked no longer
+ */
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -69,6 +81,12 @@ function disableCards() {
   resetBoard();
 }
 
+/**
+ * Cards that do not match will be covered again
+ * and setTimeout function accomplishes that 
+ * user needs to wait until the unmatching cards 
+ * are covered again to uncover more cards
+ */
 function unflipCards() {
   lockBoard = true;
 
@@ -80,11 +98,20 @@ function unflipCards() {
   }, 1500) 
 }
 
+/**
+ * 
+ */
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
+/**
+ * Immediately invoked function expression: 
+ * Will be executed right after its definition, 
+ * which means that the cards will be shuffled 
+ * from the beginning, when the page is loaded
+ */
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
