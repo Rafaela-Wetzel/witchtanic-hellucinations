@@ -68,9 +68,10 @@ audio::-webkit-media-controls-enclosure {
 .button-style {
   background-color: #000;
   border: thick outset #6d6772;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #FA7819;
   text-align: center;
+  padding: 0.3rem 1.5rem;
 }
 
 .button-off {
