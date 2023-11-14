@@ -11,8 +11,10 @@ function startGame() {
   startTimer();
 }
 
-/** How to create a JavaScript timer by:
- * https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript+
+// Source: Tutorial [1] 
+
+/** 
+ * Creates a countdown from 20 to 0
  */
 function startTimer() {
   let count = 21;
@@ -29,7 +31,7 @@ function startTimer() {
 
 }
 
-/* Source Begin: Tutorial [1] */
+// Source Begin: Tutorial [2]
 
 const cards = document.querySelectorAll('.memory-card');
 
@@ -121,7 +123,7 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-/* Source end: Tutorial [1]*/
+// Source end: Tutorial [1]
 
 /**
  * 
@@ -135,13 +137,6 @@ function winGame() {
  */
 function loseGame() {
   
-}
-
-/**
- * 
- */
-function shuffleCards() {
-
 }
 
 /**

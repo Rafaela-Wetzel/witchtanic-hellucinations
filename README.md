@@ -209,9 +209,12 @@ It can be found here: https://rafaela-wetzel.github.io/Witchtanic-Hellucinations
 
 ## Tutorials 
 
-[1] https://www.youtube.com/playlist?list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw  
-    https://github.com/code-sketch/memory-game/ 
-    
+[1] How to create a countdown timer  
+https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript+
+
+[2] How to create a memory game
+https://www.youtube.com/playlist?list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw  
+https://github.com/code-sketch/memory-game/ 
 
 ## Media
 
