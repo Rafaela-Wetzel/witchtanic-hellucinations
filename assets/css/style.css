@@ -17,11 +17,9 @@
   text-align: center;
 }
 
-.padding-10 {
-  padding: 0.6rem 0;
+.margin-10 {
+  margin: 0.6rem 0;
 }
-
-
 
 body {
   height: 100vh;
@@ -80,6 +78,7 @@ audio::-webkit-media-controls-enclosure {
   color: #fff;
 }
 
+/* Source: Tutorial [1]*/
 .memory-game {
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +123,7 @@ audio::-webkit-media-controls-enclosure {
 .front-face {
   transform: rotateY(180deg);
 }
+/* Source End: Tutorial [1]*/
 
 /* Footer */
 

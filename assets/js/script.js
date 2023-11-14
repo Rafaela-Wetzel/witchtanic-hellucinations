@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
 
-});
+}); */
 
 /* Source: Tutorial [1]*/
 const cards = document.querySelectorAll('.memory-card');
