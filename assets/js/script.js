@@ -2,7 +2,7 @@
 
 }); */
 
-/* Source: Tutorial [1]*/
+/* Source: Tutorial [1] - Making the cards flip*/
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -21,7 +21,7 @@ function flipCard() {
         hasFlippedCard = false;
         secondCard = this;
 
-        console.log({firstCard, secondCard});
+        
     }     
 }
 
@@ -29,19 +29,14 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /* Source end: Tutorial [1]*/
 
-
 document.getElementById('start').addEventListener('click', startGame);
-
-let allCards = document.getElementsByClassName('single-card');
-for (let i = 0; i < allCards.length; i++) {
-  allCards[i].addEventListener('click', revealCard);
-}
 
 /**
  * 
  */
 function startGame() {
   startTimer();
+  compareCards();
 }
 
 /** How to create a JavaScript timer by:
@@ -63,14 +58,6 @@ function startTimer() {
 }
 
 /**
- *Tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek
- */
-/*function revealCard() {
-  this.classList.toggle('flip');
-}*/
-
-
-/**
  * 
  */
 function hideCard() {
@@ -81,10 +68,20 @@ function hideCard() {
  * 
  */
 function compareCards() {
+  let faces = document.getElementsByClassName("front-face");
+  for (let i = 0; i < faces.length; i++) {
+    let frontMotif = faces[i].getAttribute("src");
+     
+    }
+    
+}
+  /*if (x) {
+
+  }
   matchingCards(); 
   winGame();
   noMatchingCards();
-}
+}*/
 
 /**
  * 
