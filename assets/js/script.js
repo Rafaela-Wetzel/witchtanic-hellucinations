@@ -18,7 +18,7 @@ function startGame() {
  */
 function startTimer() {
   document.getElementById('start').classList.add('button-off');
-  let count = 21;
+  let count = 41;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
     count--;

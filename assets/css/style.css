@@ -94,7 +94,6 @@ audio::-webkit-media-controls-enclosure {
   height: 31rem;
   margin: auto;
   perspective: 62.5rem;
-  border: medium solid yellow;
 }
 
 .memory-card {
@@ -106,7 +105,6 @@ audio::-webkit-media-controls-enclosure {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  border: medium solid green;
 }
 
 .memory-card:active {
@@ -171,6 +169,12 @@ audio::-webkit-media-controls-enclosure {
 
 .input-height {
   height: 1.5rem;
+}
+
+/* Rules Page */
+
+.padding-10 {
+  padding: 0.6rem 0;
 }
 
 /* Media Queries */
