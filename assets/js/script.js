@@ -17,6 +17,7 @@ function startGame() {
  * Creates a countdown from 20 to 0
  */
 function startTimer() {
+  document.getElementById('start').classList.add('button-off');
   let count = 21;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
@@ -26,9 +27,10 @@ function startTimer() {
     if (count === 0) {
       clearInterval(time);
       loseGame();
+      document.getElementById('start').classList.add('button-on');
     }
   }, 1000);
-
+  
 }
 
 // Source Begin: Tutorial [2]
@@ -121,6 +123,19 @@ function resetBoard() {
   });
 })();
 
+/**
+ * Creates a second, regular shuffle function 
+ * which can be invoked individually and
+ * independently from the IIFE
+ */
+function shuffle() {
+  
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos; 
+  });
+}
+
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // Source end: Tutorial [1]
@@ -129,19 +144,19 @@ cards.forEach(card => card.addEventListener('click', flipCard));
  * 
  */
 function winGame() {
-
+  shuffle();
 }
 
 /**
  * 
  */
 function loseGame() {
-  
+  shuffle();
 }
 
 /**
  * 
  */
 function endGame() {
-
+  shuffle();
 }

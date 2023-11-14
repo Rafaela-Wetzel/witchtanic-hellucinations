@@ -191,6 +191,8 @@ I have tested the responsiveness of my homepage with Firefox, Google Chrome and 
 
 ## Bugs & Problems
 
+- Sometimes I observed that the numbers in the countdown timer started to spin in chaos and not sequentially anymore. Later on I realized this was due to me clicking the start button more than once so that different countdowns would run at the same time and mess up the numbers. I solved this by adding a button-disable function with CSS and JS as soon as the user would click the start button. I would enable the button-click function again once the countdown reached zero.
+
 ## Unfixed Bugs
 
 # Deployment

@@ -74,6 +74,14 @@ audio::-webkit-media-controls-enclosure {
   text-align: center;
 }
 
+.button-off {
+  pointer-events: none;
+}
+
+.button-on {
+  pointer-events: auto;
+}
+
 .button-style:hover {
   color: #fff;
 }
