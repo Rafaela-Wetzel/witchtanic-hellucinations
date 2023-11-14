@@ -187,8 +187,16 @@ audio::-webkit-media-controls-enclosure {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
+  .width {
+    padding: 0 15rem;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+  .width {
+    padding: 0 20rem;
+  }
 
 }
