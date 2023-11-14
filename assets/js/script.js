@@ -33,8 +33,10 @@ function startTimer() {
   
 }
 
-// Source Begin: Tutorial [2]
+// Source: How-to [2]
+let matchCount = 0;
 
+// Source Begin: Tutorial [3]
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -83,6 +85,12 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
   
   resetBoard();
+  // Source: How-to [2]
+  matchCount++;
+  if (matchCount === 8) {
+    winGame();
+  };
+  // Source [2] end 
 }
 
 /**
@@ -138,13 +146,15 @@ function shuffle() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-// Source end: Tutorial [1]
+// Source end: Tutorial [2]
 
 /**
  * 
  */
 function winGame() {
+  alert('For the win!')
   shuffle();
+  window.location.reload();
 }
 
 /**
@@ -152,6 +162,7 @@ function winGame() {
  */
 function loseGame() {
   shuffle();
+  alert("You lost!");
 }
 
 /**
