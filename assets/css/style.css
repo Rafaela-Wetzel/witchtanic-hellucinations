@@ -57,7 +57,6 @@ audio {
     filter: sepia(90%) saturate(100%) grayscale(1) contrast(100%) invert(100%);
     width: 15.7rem;
     height: 2.2rem;
-    color: #FA7819; 
 }
 
 /* How to remove rounded cornes of player: https://stackoverflow.com/questions/60923328/how-to-remove-rounded-corners-of-an-audio-tag-on-chrome-and-mobile-device */
@@ -157,7 +156,7 @@ audio::-webkit-media-controls-enclosure {
 
 .form-style {
   font-size: 1.2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .input-field-style {
@@ -175,6 +174,15 @@ audio::-webkit-media-controls-enclosure {
 
 .padding-10 {
   padding: 0.6rem 0;
+}
+
+.light-orange {
+  background-color: #f5954e;
+}
+
+.button-border {
+  border: medium dotted #000;
+  padding: 0.2rem;
 }
 
 /* Media Queries */
