@@ -1,6 +1,7 @@
-/* document.addEventListener('DOMContentLoaded', function () {
-
-}); */
+/* Disables the memory cards to be clickable until user has pressed the start button */
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementsByClassName('memory-game')[0].classList.add('button-off');
+});
 
 /* Modal Box */
 /* Source [1] */
@@ -33,6 +34,7 @@ document.getElementById('start').addEventListener('click', startGame);
  */
 function startGame() {
   startTimer();
+  document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
 }
 
 // Source: Tutorial [2] 
@@ -41,7 +43,7 @@ function startGame() {
  * Creates a countdown from 20 to 0
  */
 function startTimer() {
-  document.getElementById('start').classList.add('button-off');
+  document.getElementById('myBtn').classList.add('button-off');
   let count = 41;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
@@ -51,10 +53,9 @@ function startTimer() {
     if (count === 0) {
       clearInterval(time);
       loseGame();
-      document.getElementById('start').classList.add('button-on');
+      document.getElementById('myBtn').classList.remove('button-off');
     }
-  }, 1000);
-  
+  }, 1000); 
 }
 
 // Source: How-to [3]
@@ -193,6 +194,6 @@ function loseGame() {
 /**
  * 
  */
-function endGame() {
+/* function endGame() {
   shuffle();
-}
+} */
