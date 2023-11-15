@@ -114,6 +114,7 @@ function disableCards() {
   matchCount++;
   if (matchCount === 8) {
     winGame();
+
   };
   // Source [3] end 
 }
@@ -161,13 +162,12 @@ function resetBoard() {
  * which can be invoked individually and
  * independently from the IIFE
  */
-function shuffle() {
-  
+/*function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos; 
   });
-}
+}*/
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -177,8 +177,8 @@ cards.forEach(card => card.addEventListener('click', flipCard));
  * 
  */
 function winGame() {
-  alert('For the win!')
-  shuffle();
+  loseGame = null;
+  alert('For the win!');
   window.location.reload();
 }
 
@@ -186,8 +186,7 @@ function winGame() {
  * 
  */
 function loseGame() {
-  alert("You lost!");
-  shuffle();
+  alert('You lost!');
   window.location.reload();
 }
 
