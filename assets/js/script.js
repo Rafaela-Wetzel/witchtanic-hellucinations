@@ -161,8 +161,9 @@ function winGame() {
  * 
  */
 function loseGame() {
-  shuffle();
   alert("You lost!");
+  shuffle();
+  window.location.reload();
 }
 
 /**
