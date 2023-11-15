@@ -211,13 +211,16 @@ It can be found here: https://rafaela-wetzel.github.io/Witchtanic-Hellucinations
 
 ## Tutorials 
 
-[1] How to create a countdown timer  
+[1] How to create a modal box
+https://www.w3schools.com/howto/howto_css_modals.asp
+
+[2] How to create a countdown timer  
 https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript+
 
-[2] How to create a match count that displays a final win message
+[3] How to create a match count that displays a final win message
 https://stackoverflow.com/questions/54171904/javascript-memory-game-need-to-add-congrats-message-at-the-end-of-game 
 
-[3] How to create a memory game
+[4] How to create a memory game
 https://www.youtube.com/playlist?list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw  
 https://github.com/code-sketch/memory-game/ 
 

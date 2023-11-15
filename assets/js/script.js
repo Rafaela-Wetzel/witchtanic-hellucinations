@@ -2,6 +2,30 @@
 
 }); */
 
+/* Modal Box */
+/* Source [1] */
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+/* Source [1] end */
+
 document.getElementById('start').addEventListener('click', startGame);
 
 /**
@@ -11,7 +35,7 @@ function startGame() {
   startTimer();
 }
 
-// Source: Tutorial [1] 
+// Source: Tutorial [2] 
 
 /** 
  * Creates a countdown from 20 to 0
@@ -33,10 +57,10 @@ function startTimer() {
   
 }
 
-// Source: How-to [2]
+// Source: How-to [3]
 let matchCount = 0;
 
-// Source Begin: Tutorial [3]
+// Source Begin: Tutorial [4]
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -85,12 +109,12 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
   
   resetBoard();
-  // Source: How-to [2]
+  // Source: How-to [3]
   matchCount++;
   if (matchCount === 8) {
     winGame();
   };
-  // Source [2] end 
+  // Source [3] end 
 }
 
 /**
@@ -146,7 +170,7 @@ function shuffle() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-// Source end: Tutorial [2]
+// Source end: Tutorial [4]
 
 /**
  * 

@@ -50,6 +50,46 @@ a:hover {
 }
 
 /* Play Game Page */
+
+/* Modal Box Styles */
+/* Source [1] */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: hsla(25.3, 96%, 54%, 0.5); /*rgba(250,120,25,0.5); /* Fallback color */
+  background-color: hsla(25.3, 96%, 54%, 0.5);/*rgba(250,120,25,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f5954e;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: thick solid #000;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Main Styles */
 
 /* How to style HTML5 audio tag: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */
@@ -86,7 +126,7 @@ audio::-webkit-media-controls-enclosure {
   color: #fff;
 }
 
-/* Source: Tutorial [1]*/
+/* Source: Tutorial [4]*/
 .memory-game {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +170,7 @@ audio::-webkit-media-controls-enclosure {
   transform: rotateY(180deg);
 }
 
-/* Source End: Tutorial [1]*/
+/* Source End: Tutorial [4]*/
 
 /* Footer */
 
