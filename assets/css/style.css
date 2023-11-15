@@ -92,11 +92,27 @@ a:hover {
 
 /* Main Styles */
 
+.rectangles {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.object-size {
+  width: 13rem;
+  height: 3rem;
+}
+
+.timer-style {
+  background-color: black;
+}
+
 /* How to style HTML5 audio tag: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */
 audio {
     filter: sepia(90%) saturate(100%) grayscale(1) contrast(100%) invert(100%);
     width: 15.7rem;
-    height: 2.2rem;
+    height: 3rem;
 }
 
 /* How to remove rounded cornes of player: https://stackoverflow.com/questions/60923328/how-to-remove-rounded-corners-of-an-audio-tag-on-chrome-and-mobile-device */

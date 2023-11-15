@@ -32,9 +32,21 @@
     <!--First section-->
     <main>
         <section class="text-align-center">
-            <h2 class="margin-10 light-orange">Once upon a time...</h2>
-            <!-- Adapted from: Source [1] -->
-            <button id="myBtn" class="button-style">Start Game</button>
+            <h2 class="margin-10 light-orange">Search the witches house...</h2>
+            <div class="rectangles">
+                <div>
+                    <!--Timer-->
+                    <button class="button-style object-size">Time: <span id="countdown" class="timer-style"></span>/40 sec</button>
+                </div>
+                <div class="text-align-center">
+                    <audio src="assets/music/inager.mp3" loop controls>Your browser does not support audio
+                        players.</audio>
+                </div>
+                <div>
+                    <!-- Adapted from: Source [1] -->
+                    <button id="myBtn" class="button-style object-size">Start Game</button>
+                </div>
+            </div>
             <!-- The Modal -->
             <div id="myModal" class="modal">
                 <!-- Modal content -->
@@ -48,24 +60,10 @@
                 </div>
             </div>
             <!-- Source [1] end-->
-
             <!-- <img src="">Gnarly witch picture<br><br> -->
-            <!--<p class="margin-10 width">
-                You are my servant. I am in a hurry to attend a last minute secret gathering of the witches in the
-                Forest of the Haunted. Quick, gather my belongings! What are you waiting for? DO I NEED TO TEACH YOU A
-                LESSON!??...
-            </p>
-            <p>
-                <input type="submit" id="start" value="No, my beloved enchantress! &#10; I'll start immediately!"
-                    class="button-style margin-10">
-            </p>-->
         </section>
         <!--Second section-->
         <section>
-            <h2 class="text-align-center margin-10 light-orange">Search the witches house...</h2>
-            <div class="text-align-center">
-                <audio src="assets/music/inager.mp3" loop controls>Your browser does not support audio players.</audio>
-            </div>
             <div class="memory-game">
                 <div class="memory-card" data-framework="cat">
                     <img src="assets/images/black-cat.png" class="front-face"
@@ -163,13 +161,9 @@
                 </div>
             </div>
         </section>
-        <!--Timer-->
-        <div class="text-align-center margin-top">
-            <p class="light-orange">Your time is running out... <span id="countdown"></span>/40 sec</p>
-        </div>
     </main>
     <!-- Footer: Contact section -->
-    <footer>
+    <footer class="margin-top">
         <div class="footnote-style">
             <div>
                 This project is for purposes of education only.
