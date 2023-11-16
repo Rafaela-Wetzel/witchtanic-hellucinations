@@ -191,8 +191,6 @@ I have tested the responsiveness of my homepage with Firefox, Google Chrome and 
 
 ## Bugs & Problems
 
-- Sometimes I observed that the numbers in the countdown timer started to spin in chaos and not sequentially anymore. Later on I realized this was due to me clicking the start button more than once so that different countdowns would run at the same time and mess up the numbers. I solved this by adding a button-disable function with CSS and JS as soon as the user would click the start button. I would enable the button-click function again once the countdown reached zero.
-
 - When a user would have found all card matches in the last second before the count reached zero the winning message would be displayed, and after clicking 'confirm' the losing message would also be shown. To prevent this from happening I set loseGame() to null once the winGame() function had been triggered.
 
 ## Unfixed Bugs

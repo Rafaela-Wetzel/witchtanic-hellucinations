@@ -108,6 +108,10 @@ a:hover {
   background-color: black;
 }
 
+.display-none {
+  display: none;
+}
+
 /* How to style HTML5 audio tag: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */
 audio {
     filter: sepia(90%) saturate(100%) grayscale(1) contrast(100%) invert(100%);
@@ -128,10 +132,6 @@ audio::-webkit-media-controls-enclosure {
   color: #FA7819;
   text-align: center;
   padding: 0.3rem 1.5rem;
-}
-
-.button-off {
-  pointer-events: none;
 }
 
 .button-style:hover {

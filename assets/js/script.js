@@ -1,3 +1,6 @@
+let startButton = document.getElementById('start-button');
+let endButton = document.getElementById('end-button');
+
 /* Disables the memory cards to be clickable until user has pressed the start button */
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('memory-game')[0].classList.add('button-off');
@@ -7,35 +10,46 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Source [1] */
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById('start-button');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = 'block';
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 }
 
 /* Source [1] end */
 
-document.getElementById('start').addEventListener('click', startGame);
+document.getElementById('start-game').addEventListener('click', startGame);
+document.getElementById('end-button').addEventListener('click', endGame);
 
 /**
  * 
  */
 function startGame() {
   startTimer();
-  document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
+  shuffle();
+  startButton.classList.add('display-none');
+  endButton.classList.remove('display-none');
+  }
+
+function endGame() {
+  startButton.classList.remove('display-none');
+  endButton.classList.add('display-none');
+  window.location.reload();
 }
+
+
 
 // Source: Tutorial [2] 
 
@@ -43,7 +57,7 @@ function startGame() {
  * Creates a countdown from 20 to 0
  */
 function startTimer() {
-  document.getElementById('myBtn').classList.add('button-off');
+  document.getElementById('start-button').classList.add('button-off');
   let count = 41;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
@@ -53,7 +67,7 @@ function startTimer() {
     if (count === 0) {
       clearInterval(time);
       loseGame();
-      document.getElementById('myBtn').classList.remove('button-off');
+      document.getElementById('start-button').classList.remove('button-off');
     }
   }, 1000); 
 }
@@ -144,18 +158,12 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-/**
- * Immediately invoked function expression: 
- * Will be executed right after its definition, 
- * which means that the cards will be shuffled 
- * from the beginning, when the page is loaded
- */
-(function shuffle() {
+function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos; 
   });
-})();
+}
 
 /**
  * Creates a second, regular shuffle function 
@@ -189,10 +197,3 @@ function loseGame() {
   alert('You lost!');
   window.location.reload();
 }
-
-/**
- * 
- */
-/* function endGame() {
-  shuffle();
-} */
