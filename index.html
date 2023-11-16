@@ -36,7 +36,8 @@
             <div class="rectangles">
                 <div>
                     <!--Timer-->
-                    <button class="button-style object-size"><span id="countdown" class="timer-style"></span>/40 sec</button>
+                    <button class="button-style object-size"><span id="countdown" class="timer-style"></span>/40
+                        sec</button>
                 </div>
                 <div class="text-align-center">
                     <audio src="assets/music/inager.mp3" loop controls>Your browser does not support audio
@@ -48,16 +49,37 @@
                     <button id="end-game" class="button-style object-size display-none">End Game</button>
                 </div>
             </div>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <!-- Modal / Start Game Window -->
+            <div id="modalStart" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     You are my servant. I am in a hurry to attend a last minute secret gathering of the witches in the
                     Forest of the Haunted. Quick, gather my belongings! What are you waiting for? DO I NEED TO TEACH YOU
                     A LESSON!??...
                     <br><br>
-                    <button id="start-game" class="button-style height-3rem margin-10 close">No, my beloved enchantress! &#10; I'll start immediately!</button>
+                    <button id="start-game" class="button-style height-3rem margin-10 close">No, my beloved enchantress!
+                        &#10; I'll start immediately!</button>
                     <br><br>
+                    <button id="close-modal" class="button-style object-size close">Close</button>
+                </div>
+            </div>
+            <!-- Win Modal -->
+            <div id="modalWin" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <p class="light-orange margin-10 height-3rem">
+                        YOU WON!
+                    </p>
+                    <button id="close-modal" class="button-style object-size close">Close</button>
+                </div>
+            </div>
+            <!-- Lose Modal -->
+            <div id="modalLose" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <p class="light-orange margin-10 height-3rem">
+                        YOU LOST!
+                    </p>
                     <button id="close-modal" class="button-style object-size close">Close</button>
                 </div>
             </div>

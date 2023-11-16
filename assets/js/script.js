@@ -9,29 +9,31 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Modal Box */
 /* Source [1] */
 
-// Get the modal
-var modal = document.getElementById('myModal');
+// Get the modals
+var startModal = document.getElementById('modalStart');
+var winModal = document.getElementById('modalWin');
+var loseModal = document.getElementById('modalLose'); 
 
 // Get the button that opens the modal
-var btn = document.getElementById('open-modal');
+var modalButton = document.getElementById('open-modal');
 
 // Get the element that closes the modal
 var span1 = document.getElementById('start-game');
 var span2 = document.getElementById('close-modal');
 
 // When the user clicks on 'Start Game' button, open the modal
-btn.onclick = function() {
-  modal.style.display = 'block';
+modalButton.onclick = function() {
+  startModal.style.display = 'block';
 }
 
 // Find a way to not write this twice!!
 // When the user clicks on 'Close' button, close the modal
 span1.onclick = function() {
-  modal.style.display = 'none';
+  startModal.style.display = 'none';
 }
 
 span2.onclick = function() {
-  modal.style.display = 'none';
+  startModal.style.display = 'none';
 }
 
 /* Source [1] end */
@@ -191,14 +193,14 @@ cards.forEach(card => card.addEventListener('click', flipCard));
  */
 function winGame() {
   loseGame = null;
-  alert('For the win!');
-  window.location.reload();
+  winModal.style.display = 'block';
+  /*window.location.reload();*/
 }
 
 /**
  * 
  */
 function loseGame() {
-  alert('You lost!');
-  window.location.reload();
+  loseModal.style.display = 'block';
+  /*window.location.reload();*/
 }

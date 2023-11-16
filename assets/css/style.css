@@ -49,7 +49,8 @@ nav>a {
     letter-spacing: 0.1rem;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #fff;    
 }
 
@@ -80,14 +81,6 @@ a:hover {
   padding: 20px;
   border: thick solid #000;
   width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close:hover,
-.close:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* Main Styles */
@@ -138,8 +131,10 @@ audio::-webkit-media-controls-enclosure {
   padding: 0.3rem 1.5rem;
 }
 
-.button-style:hover {
+.button-style:hover,
+.button-style:focus {
   color: #fff;
+  cursor: pointer;
 }
 
 /* Source: Tutorial [4]*/
