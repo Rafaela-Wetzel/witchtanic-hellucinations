@@ -79,15 +79,15 @@ a:hover {
 }
 
 /* The Close Button */
-.close {
-
-}
-
 .close:hover,
 .close:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.close-modal {
+  display: block;
 }
 
 /* Main Styles */
@@ -101,6 +101,10 @@ a:hover {
 
 .object-size {
   width: 13rem;
+  height: 3rem;
+}
+
+.height-3rem {
   height: 3rem;
 }
 

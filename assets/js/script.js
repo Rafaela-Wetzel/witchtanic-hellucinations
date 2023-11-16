@@ -15,16 +15,22 @@ var modal = document.getElementById('myModal');
 // Get the button that opens the modal
 var btn = document.getElementById('start-button');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = 'block';
+
+// Get the element that closes the modal
+var span1 = document.getElementById('start-game');
+var span2 = document.getElementById('close-modal');
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// Figure out a way to not write this twice!! 
+// When the user clicks on the element, close the modal
+span1.onclick = function() {
+  modal.style.display = 'none';
+}
+
+span2.onclick = function() {
   modal.style.display = 'none';
 }
 
@@ -39,6 +45,7 @@ document.getElementById('end-button').addEventListener('click', endGame);
 function startGame() {
   startTimer();
   shuffle();
+  document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
   startButton.classList.add('display-none');
   endButton.classList.remove('display-none');
   }
@@ -48,8 +55,6 @@ function endGame() {
   endButton.classList.add('display-none');
   window.location.reload();
 }
-
-
 
 // Source: Tutorial [2] 
 
