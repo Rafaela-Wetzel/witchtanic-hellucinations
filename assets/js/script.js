@@ -4,39 +4,35 @@ let endButton = document.getElementById('end-game');
 /* Disables the memory cards to be clickable until user has pressed the start button */
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('memory-game')[0].classList.add('button-off');
+
+/* Adds event listeners to all elements with close-modal class */
+for (var i = 0; i < closeClick.length; i++) {
+  closeClick[i].addEventListener('click', closeModal);
+}
 });
 
 /* Modal Box */
-/* Source [1] */
 
-// Get the modals
 var startModal = document.getElementById('modalStart');
 var winModal = document.getElementById('modalWin');
-var loseModal = document.getElementById('modalLose'); 
+var loseModal = document.getElementById('modalLose');
 
-// Get the button that opens the modal
-var modalButton = document.getElementById('open-modal');
+var openClick = document.getElementById('open-modal');
+var closeClick = document.getElementsByClassName('close-modal');
 
-// Get the element that closes the modal
-var span1 = document.getElementById('start-game');
-var span2 = document.getElementById('close-modal');
+openClick.addEventListener('click', openModal);
 
-// When the user clicks on 'Start Game' button, open the modal
-modalButton.onclick = function() {
+function closeModal() {
+  startModal.style.display = 'none';
+  winModal.style.display = 'none';
+  loseModal.style.display = 'none';
+} 
+
+function openModal() {
   startModal.style.display = 'block';
 }
 
-// Find a way to not write this twice!!
-// When the user clicks on 'Close' button, close the modal
-span1.onclick = function() {
-  startModal.style.display = 'none';
-}
-
-span2.onclick = function() {
-  startModal.style.display = 'none';
-}
-
-/* Source [1] end */
+/* Start and end game */
 
 document.getElementById('start-game').addEventListener('click', startGame);
 document.getElementById('end-game').addEventListener('click', endGame);
@@ -50,7 +46,7 @@ function startGame() {
   document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
   startButton.classList.add('display-none');
   endButton.classList.remove('display-none');
-  }
+}
 
 function endGame() {
   startButton.classList.remove('display-none');
@@ -64,7 +60,6 @@ function endGame() {
  * Creates a countdown from 20 to 0
  */
 function startTimer() {
-  document.getElementById('open-modal').classList.add('button-off');
   let count = 41;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
@@ -74,9 +69,8 @@ function startTimer() {
     if (count === 0) {
       clearInterval(time);
       loseGame();
-      document.getElementById('open-modal').classList.remove('button-off');
     }
-  }, 1000); 
+  }, 1000);
 }
 
 // Source: How-to [3]
@@ -129,7 +123,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-  
+
   resetBoard();
   // Source: How-to [3]
   matchCount++;
@@ -154,7 +148,7 @@ function unflipCards() {
     secondCard.classList.remove('flip');
 
     resetBoard();
-  }, 1500) 
+  }, 1500)
 }
 
 /**
@@ -168,7 +162,7 @@ function resetBoard() {
 function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
-    card.style.order = randomPos; 
+    card.style.order = randomPos;
   });
 }
 
