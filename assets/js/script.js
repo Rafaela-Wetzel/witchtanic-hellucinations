@@ -1,5 +1,5 @@
-let startButton = document.getElementById('start-button');
-let endButton = document.getElementById('end-button');
+let startButton = document.getElementById('open-modal');
+let endButton = document.getElementById('end-game');
 
 /* Disables the memory cards to be clickable until user has pressed the start button */
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById('start-button');
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = 'block';
+var btn = document.getElementById('open-modal');
 
 // Get the element that closes the modal
 var span1 = document.getElementById('start-game');
 var span2 = document.getElementById('close-modal');
+
+// When the user clicks on 'Start Game' button, open the modal
+btn.onclick = function() {
+  modal.style.display = 'block';
 }
 
-// Figure out a way to not write this twice!! 
-// When the user clicks on the element, close the modal
+// Find a way to not write this twice!!
+// When the user clicks on 'Close' button, close the modal
 span1.onclick = function() {
   modal.style.display = 'none';
 }
@@ -37,7 +37,7 @@ span2.onclick = function() {
 /* Source [1] end */
 
 document.getElementById('start-game').addEventListener('click', startGame);
-document.getElementById('end-button').addEventListener('click', endGame);
+document.getElementById('end-game').addEventListener('click', endGame);
 
 /**
  * 
@@ -62,7 +62,7 @@ function endGame() {
  * Creates a countdown from 20 to 0
  */
 function startTimer() {
-  document.getElementById('start-button').classList.add('button-off');
+  document.getElementById('open-modal').classList.add('button-off');
   let count = 41;
   let timer = document.getElementById('countdown');
   const time = setInterval(function () {
@@ -72,7 +72,7 @@ function startTimer() {
     if (count === 0) {
       clearInterval(time);
       loseGame();
-      document.getElementById('start-button').classList.remove('button-off');
+      document.getElementById('open-modal').classList.remove('button-off');
     }
   }, 1000); 
 }
