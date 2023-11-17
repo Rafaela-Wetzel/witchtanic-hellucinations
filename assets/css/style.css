@@ -56,7 +56,7 @@ a:focus {
 
 /* Play Game Page */
 
-/* Modal Box Styles */
+/* Modal Start Box Styles */
 /* Source [1] */
 
 /* The Modal (background) */
@@ -81,6 +81,29 @@ a:focus {
   padding: 20px;
   border: thick solid #000;
   width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Winning and Losing Modal Styles */
+
+.creepster {
+  font-family: 'Creepster', 'sans-serif';
+  font-size: 3.5rem;
+  background-color: #f5954e;
+}
+
+.picture-size {
+  height: 25rem;
+  width: 18rem;
+  border: thick solid black;
+}
+
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5954e;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
 }
 
 /* Main Styles */

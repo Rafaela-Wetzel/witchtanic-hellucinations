@@ -129,7 +129,7 @@ function disableCards() {
   resetBoard();
   // Source: How-to [3]
   matchCount++;
-  if (matchCount === 8) {
+  if (matchCount === 1) {
     winGame();
 
   };
