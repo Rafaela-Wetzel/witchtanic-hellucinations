@@ -1,14 +1,16 @@
 let startButton = document.getElementById('open-modal');
 let endButton = document.getElementById('end-game');
 
+let startFromNew = document.getElementsByClassName('reload');
+
 /* Disables the memory cards to be clickable until user has pressed the start button */
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('memory-game')[0].classList.add('button-off');
 
-/* Adds event listeners to all elements with close-modal class */
-for (var i = 0; i < closeClick.length; i++) {
-  closeClick[i].addEventListener('click', closeModal);
-}
+  /* Adds event listeners to all elements with close-modal class */
+  for (var i = 0; i < closeClick.length; i++) {
+    closeClick[i].addEventListener('click', closeModal);
+  }
 });
 
 /* Modal Box */
@@ -26,7 +28,7 @@ function closeModal() {
   startModal.style.display = 'none';
   winModal.style.display = 'none';
   loseModal.style.display = 'none';
-} 
+}
 
 function openModal() {
   startModal.style.display = 'block';
@@ -166,35 +168,41 @@ function shuffle() {
   });
 }
 
-/**
- * Creates a second, regular shuffle function 
- * which can be invoked individually and
- * independently from the IIFE
- */
-/*function shuffle() {
-  cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
-    card.style.order = randomPos; 
-  });
-}*/
-
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // Source end: Tutorial [4]
 
-/**
- * 
+/** 
+ * Opens a modal window that displays winning message;
+ * adds event listener that triggers a refresh of the page
+ * to the button that closes the modal window 
  */
 function winGame() {
   loseGame = null;
   winModal.style.display = 'block';
-  /*window.location.reload();*/
+
+  for (var i = 0; i < startFromNew.length; i++) {
+    startFromNew[i].addEventListener('click', reload);
+  }
 }
 
 /**
- * 
+ * Opens a modal window that displays losing message;
+ * adds event listener that triggers a refresh of the page
+ * to the button that closes the modal window 
  */
 function loseGame() {
   loseModal.style.display = 'block';
-  /*window.location.reload();*/
+
+  for (var i = 0; i < startFromNew.length; i++) {
+    startFromNew[i].addEventListener('click', reload);
+  }
+}
+
+/**
+ * Starts game from new & shuffles the cards
+ */
+function reload() {
+  window.location.reload();
+  shuffle();
 }
