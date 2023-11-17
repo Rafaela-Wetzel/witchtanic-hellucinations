@@ -102,7 +102,7 @@ a:focus {
   flex-direction: column;
   background-color: #f5954e;
   align-items: center;
-  margin-top: 2rem;
+  margin: 1rem 0;
   gap: 1rem;
 }
 
