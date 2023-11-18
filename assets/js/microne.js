@@ -33,15 +33,17 @@ function Microne(parent_el) {
 		position: 'absolute',
 		top: '50%',
 		left: '50%',
-		width: '40px',
-		height: '40px',
+		width: '50px',
+		height: '50px',
 		transform: 'translate(-50%, -50%)',
 		textAlign: 'center',
 		fontWeight: 'bold',
         outline: 'black outset 7px',
         borderRadius: '50%',
         paddingLeft: '2px',
-        paddingTop: '1px'
+        paddingTop: '5px',
+		backgroundColor: '#000',
+		color: '#FA7819'
 	})
 	this.el.appendChild(this.play_button)
 
