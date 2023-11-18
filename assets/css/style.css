@@ -79,10 +79,15 @@ a:focus {
   width: 50%;
 }
 
-.creepster {
+.creepster-3rem {
   font-family: 'Creepster', 'sans-serif';
   font-size: 3.5rem;
   background-color: #f5954e;
+}
+
+.creepster-2rem {
+  font-family: 'Creepster', 'sans-serif';
+  font-size: 2.5rem;
 }
 
 .picture-size {
