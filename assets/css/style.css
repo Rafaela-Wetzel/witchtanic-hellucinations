@@ -56,34 +56,28 @@ a:focus {
 
 /* Play Game Page */
 
-/* Modal Start Box Styles */
-/* Source [1] */
-
-/* The Modal (background) */
+/* Modal Styles */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed; 
+  z-index: 1; 
   text-align: center;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: hsla(25.3, 96%, 54%, 0.5); /*rgba(250,120,25,0.5); /* Fallback color */
-  background-color: hsla(25.3, 96%, 54%, 0.5);/*rgba(250,120,25,0.5); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: hsla(25.3, 96%, 54%, 0.5);
+  background-color: hsla(25.3, 96%, 54%, 0.5);
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #f5954e;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border: thick solid #000;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 50%;
 }
-
-/* Winning and Losing Modal Styles */
 
 .creepster {
   font-family: 'Creepster', 'sans-serif';
@@ -108,7 +102,7 @@ a:focus {
 
 /* Main Styles */
 
-.rectangles {
+.controls-box {
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -132,7 +126,6 @@ a:focus {
   display: none;
 }
 
-/* How to style HTML5 audio tag: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */
 audio {
     filter: sepia(90%) saturate(100%) grayscale(1) contrast(100%) invert(100%);
     width: 15.7rem;

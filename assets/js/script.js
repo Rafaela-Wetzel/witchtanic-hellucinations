@@ -17,7 +17,6 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-
 // Disables the memory cards to be clickable until user has pressed the start button
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('memory-game')[0].classList.add('button-off');
@@ -29,12 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Start Game Modal Box 
-
+// Event listener for 'Start Game' modal box 
 openClick.addEventListener('click', openModal);
 
 /**
- * Closes Modal Windows
+ * Closes modal windows
  */
 function closeModal() {
   startModal.style.display = 'none';
