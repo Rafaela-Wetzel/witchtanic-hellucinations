@@ -224,6 +224,9 @@ https://stackoverflow.com/questions/54171904/javascript-memory-game-need-to-add-
 https://www.youtube.com/playlist?list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw  
 https://github.com/code-sketch/memory-game/ 
 
+[5] Microne music player code  
+https://github.com/kodedninja/microne/tree/master
+
 ## Media
 
 ## Acknowledgements

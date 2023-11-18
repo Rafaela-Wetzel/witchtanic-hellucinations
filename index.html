@@ -36,8 +36,10 @@
             <div class="controls-box">
                 <div>
                     <!--Timer-->
-                    <div class="rectangles"><span id="countdown" class="timer-style"></span><span class="timer-style" id="time-placeholder">Time</span></div>
+                    <div class="rectangles"><span id="countdown" class="timer-style"></span><span class="timer-style"
+                            id="time-placeholder">Time</span></div>
                 </div>
+                <div id="player"></div>
                 <!--
                 <div class="text-align-center">
                     <audio src="assets/music/inager.mp3" loop controls>Your browser does not support audio
@@ -234,6 +236,12 @@
     </footer>
     <!--Font Awesome Link-->
     <script src="https://kit.fontawesome.com/c28c3d1b4e.js" crossorigin="anonymous"></script>
+    <!-- Microne Music Player-->
+    <script src="assets/js/microne.js"></script>
+    <script>
+        var m = new Microne(document.getElementById('player'))
+        m.source('assets/music/inager.mp3')
+    </script>
     <!--JavsScript Link-->
     <script src="assets/js/script.js"></script>
 </body>
