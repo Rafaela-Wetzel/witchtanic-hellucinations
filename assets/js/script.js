@@ -60,6 +60,7 @@ function startGame() {
   startTimer();
   shuffle();
   document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
+  document.getElementById('time-placeholder').classList.add('display-none');
   startButton.classList.add('display-none');
   endButton.classList.remove('display-none');
 }
