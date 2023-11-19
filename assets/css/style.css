@@ -235,8 +235,38 @@ a:focus {
   margin-top: 12rem;
 }
 
+/* Rules Page */
+
+.padding-10 {
+  padding: 0.6rem 0;
+}
+
+.light-orange {
+  background-color: #f5954e;
+}
+
+.button-border {
+  border: medium dotted #f5954e;
+  padding: 0.2rem;
+  background-color: #000;
+  color: #f5954e;
+}
+
+.rules-div {
+  border: 0.5rem outset #000;
+  width: 50rem;
+  margin-left: 20rem;
+  list-style-type: none;
+  box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
+  color: #FA7819;
+  margin-bottom: 15rem;
+}
+
+.black {
+  background-color: #1f1d19;
+}
+
 /* Contact Page */
-/* Contact Form */
 
 .form-style {
   font-size: 1.2rem;
@@ -252,21 +282,6 @@ a:focus {
 
 .input-height {
   height: 1.5rem;
-}
-
-/* Rules Page */
-
-.padding-10 {
-  padding: 0.6rem 0;
-}
-
-.light-orange {
-  background-color: #f5954e;
-}
-
-.button-border {
-  border: medium dotted #000;
-  padding: 0.2rem;
 }
 
 /* Media Queries */
