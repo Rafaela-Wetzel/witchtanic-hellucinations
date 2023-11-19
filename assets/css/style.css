@@ -32,10 +32,10 @@ body {
 /* Header & Nav Styles */
 
 .main-heading {
-   font-family: 'Creepster', 'sans-serif';
-   font-size: 3.5rem;
-   margin-top: 0;
-   margin-bottom: 1.3rem;
+  font-family: 'Creepster', 'sans-serif';
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 
 nav {
@@ -43,28 +43,28 @@ nav {
 }
 
 nav>a {
-    color: #000000;
-    font-size: 1.1rem;
-    padding: 0 0.3rem;
-    letter-spacing: 0.1rem;
+  color: #000000;
+  font-size: 1.1rem;
+  padding: 0 0.3rem;
+  letter-spacing: 0.1rem;
 }
 
 a:hover,
 a:focus {
-  color: #fff;    
+  color: #fff;
 }
 
-/* Play Game Page */
+/* Game Page */
 
 /* Modal Styles */
 .modal {
   display: none;
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   text-align: center;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: -8rem;
+  top: 3rem;
+  width: 170%;
   height: 100%;
   overflow: auto;
   background-color: hsla(25.3, 96%, 54%, 0.5);
@@ -73,14 +73,20 @@ a:focus {
 
 .modal-content {
   background-color: #f5954e;
-  margin: 15% auto; 
-  padding: 20px;
+  margin: 15% auto;
+  padding: 1.25rem;
   border: thick solid #000;
   box-shadow: 0.5rem 0.5rem 0.5rem #1f1d19;
   width: 50%;
 }
 
-.creepster-3rem {
+.could-worse-size {
+  font-family: 'Creepster', 'sans-serif';
+  font-size: 2rem;
+  background-color: #f5954e;
+}
+
+.game-over-size {
   font-family: 'Creepster', 'sans-serif';
   font-size: 3.5rem;
   background-color: #f5954e;
@@ -88,19 +94,26 @@ a:focus {
 
 .creepster-2rem {
   font-family: 'Creepster', 'sans-serif';
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .picture-size-1 {
-  height: 24rem;
-  width: 18rem;
+  height: 16rem;
+  width: 14rem;
   border: thick solid black;
 }
 
-.picture-size-2 {
-  height: 25rem;
-  width: 18rem;
+.pumpkin-size {
+  height: 16rem;
+  width: 12rem;
   border: thick solid black;
+}
+
+.cat-size {
+  height: 20rem;
+  width: 15rem;
+  border: thick solid black;
+
 }
 
 .margin-top {
@@ -131,7 +144,7 @@ a:focus {
   font-size: 1rem;
   color: #FA7819;
   height: 3rem;
-  width: 8rem;
+  width: 6rem;
   padding: 0.6rem;
 }
 
@@ -146,8 +159,8 @@ a:focus {
   height: 3rem;
 }
 
-.height-3rem {
-  height: 3rem;
+.button-height {
+  height: 5rem;
 }
 
 .timer-style {
@@ -168,8 +181,7 @@ a:focus {
 }
 
 .button-style:hover,
-.button-style:focus
- {
+.button-style:focus {
   color: #fff;
   cursor: pointer;
 }
@@ -178,8 +190,8 @@ a:focus {
 .memory-game {
   display: flex;
   flex-wrap: wrap;
-  width: 40rem;
-  height: 31rem;
+  width: 20rem;
+  height: 17rem;
   margin: auto;
   perspective: 62.5rem;
 }
@@ -210,7 +222,7 @@ a:focus {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 1.25rem;
+  padding: 0.4rem;
   background: #f5954e;
   backface-visibility: hidden;
 }
@@ -223,14 +235,13 @@ a:focus {
 
 /* Footer */
 
-/* Footnote */
 .footnote-style {
-    text-align: center;
-    margin-top: 3em;
-    border-top: 0.12rem solid #000000;
-    padding: 0.3rem 1rem;
-    display: flex;
-    justify-content: space-between;
+  text-align: center;
+  margin-top: 3em;
+  border-top: 0.12rem solid #000000;
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .color-black {
@@ -296,26 +307,279 @@ a:focus {
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 
+  /* General Styles */
+
+  .rectangles {
+    width: 8rem;
+  }
+
+  /* Header & Nav Styles */
+
+  .main-heading {
+    font-size: 3.2rem;
+  }
+
+  /* Game Page */
+
+  .memory-game {
+    width: 33rem;
+    height: 29rem;
+  }
+
+  .front-face,
+  .back-face {
+    padding: 0.75rem;
+  }
+
+  /* Modal Styles */
+
+  .modal {
+    left: -12.5rem;
+    top: -4rem;
+    width: 170%;
+    height: 120%;
+  }
+
+  .creepster-2rem {
+    font-size: 2rem;
+  }
+
+  .picture-size-1 {
+    height: 20rem;
+    width: 17rem;
+  }
+
+  .pumpkin-size {
+    height: 24rem;
+    width: 18rem;
+  }
+  
+
+  /* Main Styles */
+
+  .button-height {
+    height: 4rem;
+  }
+
+  /* Source: Tutorial [4]*/
+
+  /* Footer */
+
+  /* Rules Page */
+
+  /* Contact Page */
+
 }
-        
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+  /* General Styles */
+
+  .rectangles {
+    width: 8rem;
+  }
+
+  /* Header & Nav Styles */
+
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  /* Game Page */
+
+  .memory-game {
+    width: 40rem;
+    height: 31rem;
+  }
+
+  .front-face,
+  .back-face {
+    padding: 1.25rem;
+  }
+
+  /* Modal Styles */
+
+  .creepster-2rem {
+    font-size: 2.5rem;
+  }
+
+  .picture-size-1 {
+    height: 26rem;
+    width: 20rem;
+  }
+
+  .modal {
+    left: -16.5rem;
+    top: -4rem;
+    width: 170%;
+    height: 120%;
+  }
+
+  .cat-size {
+    height: 25rem;
+    width: 18rem;
+    border: thick solid black;
+  }
+
+  .pumpkin-size {
+    height: 25rem;
+    width: 18rem;
+  }
+  
+
+  /* Main Styles */
+
+  .button-height {
+    height: 3rem;
+  }
+
+  /* Source: Tutorial [4]*/
+
+  /* Footer */
+
+  /* Rules Page */
+
+  /* Contact Page */
 
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
+  /* General Styles */
+
   .width {
     padding: 0 15rem;
   }
+
+  .rectangles {
+    width: 8rem;
+  }
+
+  /* Header & Nav Styles */
+
+  .main-heading {
+    font-size: 5rem;
+  }
+
+  /* Game Page */
+
+  .memory-game {
+    width: 40rem;
+    height: 31rem;
+  }
+
+  .front-face,
+  .back-face {
+    padding: 1.25rem;
+  }
+
+  /* Modal Styles */
+
+  .creepster-2rem {
+    font-size: 2.5rem;
+  }
+
+  .picture-size-1 {
+    height: 26rem;
+    width: 20rem;
+  }
+
+  .modal {
+    left: -15.5rem;
+    top: -8rem;
+    width: 150%;
+    height: 150%;
+  }
+
+  .pumpkin-size {
+    height: 27rem;
+    width: 20rem;
+  }
+  
+
+  /* Main Styles */
+
+  .button-height {
+    height: 3rem;
+  }
+
+  /* Source: Tutorial [4]*/
+
+  /* Footer */
+
+  /* Rules Page */
+
+  /* Contact Page */
 
 }
 
 @media screen and (min-width: 1200px) {
 
+  /* General Styles */
+
   .width {
     padding: 0 20rem;
   }
+
+  .rectangles {
+    width: 8rem;
+  }
+
+  /* Header & Nav Styles */
+
+  .main-heading {
+    font-size: 6rem;
+  }
+
+  /* Game Page */
+
+  .memory-game {
+    width: 40rem;
+    height: 31rem;
+  }
+
+  .front-face,
+  .back-face {
+    padding: 1.25rem;
+  }
+
+  /* Modal Styles */
+
+  .creepster-2rem {
+    font-size: 2.5rem;
+  }
+
+  .picture-size-1 {
+    height: 24rem;
+    width: 18rem;
+  }
+
+  .modal {
+    left: -19rem;
+    top: -10rem;
+    width: 150%;
+    height: 160%;
+  }
+
+  .pumpkin-size {
+    height: 28rem;
+    width: 20rem;
+  }  
+
+  /* Main Styles */
+
+  .button-height {
+    height: 3rem;
+  }
+
+  /* Source: Tutorial [4]*/
+
+  /* Footer */
+
+  /* Rules Page */
+
+  /* Contact Page */
 
 }

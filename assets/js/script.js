@@ -5,12 +5,11 @@ let startFromNew = document.getElementsByClassName('reload');
 var startModal = document.getElementById('modalStart');
 var winModal = document.getElementById('modalWin');
 var loseModal = document.getElementById('modalLose');
-var openClick = document.getElementById('open-modal');
 var closeClick = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
-let totalTime = 41;
+let totalTime = 5;
 
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Event listener for 'Start Game' modal box 
-openClick.addEventListener('click', openModal);
+startButton.addEventListener('click', openModal);
 
 /**
  * Closes modal windows
@@ -137,7 +136,7 @@ function disableCards() {
   resetBoard();
 
   matchCount++;
-  if (matchCount === 8) {
+  if (matchCount === 1) {
     winGame();
   };
 }
@@ -216,7 +215,7 @@ function reload() {
 /* Contact Page */
 
 // Doesn't work -- WHY???? */
-document.getElementById('confirmation').addEventListener('click', confirmationPage);
+document.getElementById('confirmation').addEventListener('submit', openConfirmation);
 
 /**
  * Redirects user to a 'message sent' confirmation page after filling out contact form

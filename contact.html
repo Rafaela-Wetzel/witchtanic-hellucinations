@@ -17,22 +17,22 @@
     <!-- EmailJS Contact Service Code -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('geejuxaVgM92hqVYN');
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_r17121989w', 'contact_form', this)
-                    .then(function() {
+                    .then(function () {
                         console.log('SUCCESS!');
-                    }, function(error) {
+                    }, function (error) {
                         console.log('FAILED...', error);
                     });
             });
@@ -61,11 +61,11 @@
                 <input type="hidden" name="contact_number">
                 <label for="yourname">Name</label>
                 <br>
-                <input type="text" id="user_name" name="user_name" class="input-field-style input-height"
-                    required><br>
+                <input type="text" id="user_name" name="user_name" class="input-field-style input-height" required><br>
                 <label for="email">Email address</label>
                 <br>
-                <input type="email" id="user_email" name="user_email" class="input-field-style input-height" required><br><br>
+                <input type="email" id="user_email" name="user_email" class="input-field-style input-height"
+                    required><br><br>
                 <label for="feedback">The witch is dying to hear from you...</label>
                 <br>
                 <textarea id="message" name="message" cols="40" rows="10" style="max-width:100%"
