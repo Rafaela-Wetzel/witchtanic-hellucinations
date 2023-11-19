@@ -45,6 +45,7 @@ function Microne(parent_el) {
 		backgroundColor: '#000',
 		color: '#FA7819'
 	})
+	
 	this.el.appendChild(this.play_button)
 
 	this.init = function () {

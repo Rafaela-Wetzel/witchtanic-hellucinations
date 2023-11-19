@@ -90,7 +90,13 @@ a:focus {
   font-size: 2.5rem;
 }
 
-.picture-size {
+.picture-size-1 {
+  height: 24rem;
+  width: 18rem;
+  border: thick solid black;
+}
+
+.picture-size-2 {
   height: 25rem;
   width: 18rem;
   border: thick solid black;
