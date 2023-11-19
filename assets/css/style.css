@@ -76,6 +76,7 @@ a:focus {
   margin: 15% auto; 
   padding: 20px;
   border: thick solid #000;
+  box-shadow: 0.5rem 0.5rem 0.5rem #1f1d19;
   width: 50%;
 }
 
@@ -100,6 +101,10 @@ a:focus {
   height: 25rem;
   width: 18rem;
   border: thick solid black;
+}
+
+.margin-top {
+  margin-top: 1rem;
 }
 
 .modal-flex {
@@ -181,6 +186,7 @@ a:focus {
 
 .memory-card {
   border: medium solid black;
+  box-shadow: 0.5rem 0.5rem 0.3rem #1f1d19;
   width: calc(25% - 0.62rem);
   height: calc(33.333% - 0.62rem);
   margin: 0.31rem;
@@ -259,6 +265,7 @@ a:focus {
   list-style-type: none;
   box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
   color: #FA7819;
+  margin-top: 3rem;
   margin-bottom: 15rem;
 }
 
