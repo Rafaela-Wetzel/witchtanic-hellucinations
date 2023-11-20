@@ -15,8 +15,8 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- EmailJS Contact Service Link -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
         (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('geejuxaVgM92hqVYN');
@@ -43,15 +43,15 @@
         <section>
             <h2 class="light-orange creepster-2rem">Your message</h2>
             <form id="contact-form" class="form-style">
-                <input type="hidden" name="contact_number">
-                <label for="yourname">Name</label>
+                <!--<input type="hidden" name="contact_number">-->
+                <label for="user_name">Name</label>
                 <br>
                 <input type="text" id="user_name" name="user_name" class="input-field-style input-height" required><br>
-                <label for="email">Email address</label>
+                <label for="user_email">Email address</label>
                 <br>
                 <input type="email" id="user_email" name="user_email" class="input-field-style input-height"
                     required><br><br>
-                <label for="feedback">The witch is dying to hear from you...</label>
+                <label for="message">The witch is dying to hear from you...</label>
                 <br>
                 <textarea id="message" name="message" cols="40" rows="10" style="max-width:100%"
                     class="input-field-style" required></textarea>

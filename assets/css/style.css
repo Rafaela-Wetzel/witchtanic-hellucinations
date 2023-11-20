@@ -210,7 +210,7 @@ a:focus {
 
 .memory-card:active {
   transform: scale(.97);
-  transition: .2sec;
+  transition: .2s;
 }
 
 .memory-card.flip {
@@ -300,6 +300,32 @@ a:focus {
 
 .input-height {
   height: 1.5rem;
+}
+
+/* Contact Confirmation Page */
+
+.link-style {
+  background-color: #000;
+  text-decoration: none !important; /* doesn't do anything!*/
+  color: #FA7819;
+}
+
+/*
+a:link > .link-style {
+  text-decoration: none; /*doesn't do anything! how can I remove the underline for only THIS a link but not the others?
+}*/
+
+.span-mainpage {
+  padding: 0.8rem 4rem;
+}
+
+.div-mainpage {
+  margin: 2rem 0 27rem;
+}
+
+.link-style:hover,
+.link-style:focus {
+  color: #fff;
 }
 
 /* Media Queries */
