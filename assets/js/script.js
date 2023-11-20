@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByClassName('memory-game')[0].classList.add('button-off');
 
   // Adds event listeners to all elements with close-modal class 
-  // If not put in here event doesn't work?? 
   for (var i = 0; i < closeClick.length; i++) {
     closeClick[i].addEventListener('click', closeModal);
   };

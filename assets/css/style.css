@@ -306,14 +306,12 @@ a:focus {
 
 .link-style {
   background-color: #000;
-  text-decoration: none !important; /* doesn't do anything!*/
   color: #FA7819;
 }
 
-/*
-a:link > .link-style {
-  text-decoration: none; /*doesn't do anything! how can I remove the underline for only THIS a link but not the others?
-}*/
+.div-mainpage > a {
+  text-decoration: none;
+}
 
 .span-mainpage {
   padding: 0.8rem 4rem;
