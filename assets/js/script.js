@@ -24,202 +24,208 @@ document.addEventListener('DOMContentLoaded', function () {
   // If not put in here event doesn't work?? 
   for (var i = 0; i < closeClick.length; i++) {
     closeClick[i].addEventListener('click', closeModal);
+  };
+
+
+  // Event listener for 'Start Game' modal box 
+  startButton.addEventListener('click', openModal);
+
+  /**
+   * Closes modal windows
+   */
+  function closeModal() {
+    startModal.style.display = 'none';
+    winModal.style.display = 'none';
+    loseModal.style.display = 'none';
   }
-});
 
-// Event listener for 'Start Game' modal box 
-startButton.addEventListener('click', openModal);
+  /**
+   * Opens start game modal 
+   */
+  function openModal() {
+    startModal.style.display = 'block';
+  }
 
-/**
- * Closes modal windows
- */
-function closeModal() {
-  startModal.style.display = 'none';
-  winModal.style.display = 'none';
-  loseModal.style.display = 'none';
-}
+  document.getElementById('start-game').addEventListener('click', startGame);
+  document.getElementById('end-game').addEventListener('click', endGame);
 
-/**
- * Opens start game modal 
- */
-function openModal() {
-  startModal.style.display = 'block';
-}
+  /**
+   * Starts game when clicking on "Start Game" button; 
+   * starts countdown and shuffles the cards;
+   * makes cards clickable again by removing 'button-off';
+   * hides 'Start Game' button and shows 'End Game' button instead
+   */
+  function startGame() {
+    startTimer();
+    shuffle();
+    document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
+    document.getElementById('time-placeholder').classList.add('display-none');
+    startButton.classList.add('display-none');
+    endButton.classList.remove('display-none');
+  }
 
-document.getElementById('start-game').addEventListener('click', startGame);
-document.getElementById('end-game').addEventListener('click', endGame);
+  /**
+   * Ends game by reloading window;
+   * hides 'End Game' button and shows
+   * 'Start Game' button instead
+   */
+  function endGame() {
+    startButton.classList.remove('display-none');
+    endButton.classList.add('display-none');
+    window.location.reload();
+  }
 
-/**
- * Starts game when clicking on "Start Game" button; 
- * starts countdown and shuffles the cards;
- * makes cards clickable again by removing 'button-off';
- * hides 'Start Game' button and shows 'End Game' button instead
- */
-function startGame() {
-  startTimer();
-  shuffle();
-  document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
-  document.getElementById('time-placeholder').classList.add('display-none');
-  startButton.classList.add('display-none');
-  endButton.classList.remove('display-none');
-}
+  /** 
+   * Creates a countdown from 20 to 0
+   */
+  function startTimer() {
+    const time = setInterval(function () {
+      totalTime--;
+      console.log(totalTime);
+      countdown.innerText = totalTime;
+      if (totalTime === 0) {
+        clearInterval(time);
+        loseGame();
+      }
+    }, 1000);
+  }
 
-/**
- * Ends game by reloading window;
- * hides 'End Game' button and shows
- * 'Start Game' button instead
- */
-function endGame() {
-  startButton.classList.remove('display-none');
-  endButton.classList.add('display-none');
-  window.location.reload();
-}
+  // Source: Tutorial [4] - How to create a Memory Game 
 
-/** 
- * Creates a countdown from 20 to 0
- */
-function startTimer() {
-  const time = setInterval(function () {
-    totalTime--;
-    console.log(totalTime);
-    countdown.innerText = totalTime;
-    if (totalTime === 0) {
-      clearInterval(time);
-      loseGame();
+  /** 
+   * Makes the cards flip 
+   */
+  function flipCard() {
+    if (lockBoard) return;
+    if (this === firstCard) return;
+
+    this.classList.toggle('flip');
+
+    if (!hasFlippedCard) {
+      // First click
+      hasFlippedCard = true;
+      firstCard = this;
+
+      return;
     }
-  }, 1000);
-}
+    // Second click 
+    hasFlippedCard = false;
+    secondCard = this;
 
-// Source: Tutorial [4] - How to create a Memory Game 
-
-/** 
- * Makes the cards flip 
- */
-function flipCard() {
-  if (lockBoard) return;
-  if (this === firstCard) return;
-
-  this.classList.toggle('flip');
-
-  if (!hasFlippedCard) {
-    // First click
-    hasFlippedCard = true;
-    firstCard = this;
-
-    return;
+    checkForMatch();
   }
-  // Second click 
-  hasFlippedCard = false;
-  secondCard = this;
 
-  checkForMatch();
-}
+  /**
+   * Checks if the cards match
+   * if they don't match unflipCards is called
+   */
+  function checkForMatch() {
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    isMatch ? disableCards() : unflipCards();
+  }
 
-/**
- * Checks if the cards match
- * if they don't match unflipCards is called
- */
-function checkForMatch() {
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-  isMatch ? disableCards() : unflipCards();
-}
-
-/**
- * Accomplishes that the matching card pairs 
- * stay uncovered and can be clicked no longer;
- * match count calls winGame function once
- * 8 card matches have been found
- */
-function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
-  resetBoard();
-
-  matchCount++;
-  if (matchCount === 1) {
-    winGame();
-  };
-}
-
-/**
- * Cards that do not match will be covered again
- * and setTimeout function accomplishes that 
- * user needs to wait until the unmatching cards 
- * are covered again to uncover more cards
- */
-function unflipCards() {
-  lockBoard = true;
-
-  setTimeout(() => {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
-
+  /**
+   * Accomplishes that the matching card pairs 
+   * stay uncovered and can be clicked no longer;
+   * match count calls winGame function once
+   * 8 card matches have been found
+   */
+  function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
     resetBoard();
-  }, 1500)
-}
 
-function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
-}
+    matchCount++;
+    if (matchCount === 1) {
+      winGame();
+    };
+  }
 
-/**
- * Shuffles the cards
- */
-function shuffle() {
-  cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
-    card.style.order = randomPos;
+  /**
+   * Cards that do not match will be covered again
+   * and setTimeout function accomplishes that 
+   * user needs to wait until the unmatching cards 
+   * are covered again to uncover more cards
+   */
+  function unflipCards() {
+    lockBoard = true;
+
+    setTimeout(() => {
+      firstCard.classList.remove('flip');
+      secondCard.classList.remove('flip');
+
+      resetBoard();
+    }, 1500)
+  }
+
+  function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+  }
+
+  /**
+   * Shuffles the cards
+   */
+  function shuffle() {
+    cards.forEach(card => {
+      let randomPos = Math.floor(Math.random() * 12);
+      card.style.order = randomPos;
+    });
+  }
+
+  cards.forEach(card => card.addEventListener('click', flipCard));
+
+  // Source end: Tutorial [4]
+
+  /** 
+   * Opens a modal window that displays winning message;
+   * adds event listener that triggers a refresh of the page
+   * to the button that closes the modal window when clicked
+   */
+  function winGame() {
+    loseGame = null;
+    winModal.style.display = 'block';
+
+    for (var i = 0; i < startFromNew.length; i++) {
+      startFromNew[i].addEventListener('click', reload);
+    };
+  }
+
+  /**
+   * Opens a modal window that displays losing message;
+   * adds event listener that triggers a refresh of the page
+   * to the button that closes the modal window when clicked
+   */
+  function loseGame() {
+    loseModal.style.display = 'block';
+
+    for (var i = 0; i < startFromNew.length; i++) {
+      startFromNew[i].addEventListener('click', reload);
+    };
+  }
+
+  /**
+   * Starts game from new & shuffles the cards
+   */
+  function reload() {
+    window.location.reload();
+    shuffle();
+  }
+
+  /* Contact Page */
+
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    confirmationPage();
   });
-}
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+  /**
+   * Redirects user to a 'message sent' confirmation page after filling out contact form
+   */
+  function confirmationPage() {
+    console.log('Hello');
+    window.location.replace("https://8000-rafaelawetz-witchtanich-urrvfnefpje.ws-eu106.gitpod.io/contact-confirmation.html");
+  }
 
-// Source end: Tutorial [4]
-
-/** 
- * Opens a modal window that displays winning message;
- * adds event listener that triggers a refresh of the page
- * to the button that closes the modal window when clicked
- */
-function winGame() {
-  loseGame = null;
-  winModal.style.display = 'block';
-
-  for (var i = 0; i < startFromNew.length; i++) {
-    startFromNew[i].addEventListener('click', reload);
-  };
-}
-
-/**
- * Opens a modal window that displays losing message;
- * adds event listener that triggers a refresh of the page
- * to the button that closes the modal window when clicked
- */
-function loseGame() {
-  loseModal.style.display = 'block';
-
-  for (var i = 0; i < startFromNew.length; i++) {
-    startFromNew[i].addEventListener('click', reload);
-  };
-}
-
-/**
- * Starts game from new & shuffles the cards
- */
-function reload() {
-  window.location.reload();
-  shuffle();
-}
-
-/* Contact Page */
-
-// Doesn't work -- WHY???? */
-document.getElementById('confirmation').addEventListener('submit', openConfirmation);
-
-/**
- * Redirects user to a 'message sent' confirmation page after filling out contact form
- */
-function confirmationPage() {
-  window.location.replace("https://8000-rafaelawetz-witchtanich-urrvfnefpje.ws-eu106.gitpod.io/contact-confirmation.html");
-}
+  // Closing brackets from DOMContentLoaded
+});

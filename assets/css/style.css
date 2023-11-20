@@ -264,19 +264,21 @@ a:focus {
 
 .button-border {
   border: medium dotted #f5954e;
-  padding: 0.2rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
   background-color: #000;
   color: #f5954e;
 }
 
 .rules-div {
   border: 0.5rem outset #000;
-  width: 50rem;
-  margin-left: 20rem;
+  width: 22rem;
+  height: 18rem;
+  margin-left: 0rem;
   list-style-type: none;
   box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
   color: #FA7819;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 15rem;
 }
 
@@ -366,6 +368,13 @@ a:focus {
   /* Footer */
 
   /* Rules Page */
+
+  .rules-div {
+    width: 35rem;
+    height: 14.5rem;
+    margin-top: 2rem;
+    margin: 2rem 0 0 0.4rem;
+  }
 
   /* Contact Page */
 
