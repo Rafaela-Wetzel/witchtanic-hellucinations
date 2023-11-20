@@ -274,12 +274,10 @@ a:focus {
   border: 0.5rem outset #000;
   width: 22rem;
   height: 18rem;
-  margin-left: 0rem;
   list-style-type: none;
   box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
-  color: #FA7819;
-  margin-top: 2rem;
-  margin-bottom: 15rem;
+  color: hsl(25, 96%, 54%);
+  margin: 2rem 0 15rem 0;
 }
 
 .black {
@@ -356,7 +354,6 @@ a:focus {
     width: 18rem;
   }
   
-
   /* Main Styles */
 
   .button-height {
@@ -372,7 +369,6 @@ a:focus {
   .rules-div {
     width: 35rem;
     height: 14.5rem;
-    margin-top: 2rem;
     margin: 2rem 0 0 0.4rem;
   }
 
@@ -449,6 +445,12 @@ a:focus {
 
   /* Rules Page */
 
+  .rules-div {
+    width: 47rem;
+    height: 14.5rem;
+    margin: 2rem 0 0 0.4rem;
+  }
+
   /* Contact Page */
 
 }
@@ -520,6 +522,12 @@ a:focus {
 
   /* Rules Page */
 
+  .rules-div {
+    width: 50rem;
+    height: 14.5rem;
+    margin: 2rem 0 0 6rem;
+  }
+
   /* Contact Page */
 
 }
@@ -569,7 +577,7 @@ a:focus {
     left: -19rem;
     top: -10rem;
     width: 150%;
-    height: 160%;
+    height: 140%;
   }
 
   .pumpkin-size {
@@ -589,6 +597,24 @@ a:focus {
 
   /* Rules Page */
 
+  .rules-div {
+    width: 50rem;
+    height: 14.5rem;
+    margin: 2rem 0 0 13rem;
+  }
+
   /* Contact Page */
+
+}
+
+@media screen and (min-width: 1350px) {
+
+ /* Rules Page */
+
+ .rules-div {
+  width: 50rem;
+  height: 14.5rem;
+  margin: 2rem 0 0 17rem;
+}
 
 }

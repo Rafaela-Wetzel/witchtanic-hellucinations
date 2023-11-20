@@ -9,7 +9,7 @@ var closeClick = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
-let totalTime = 5;
+let totalTime = 41;
 
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resetBoard();
 
     matchCount++;
-    if (matchCount === 1) {
+    if (matchCount === 8) {
       winGame();
     };
   }
@@ -210,21 +210,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function reload() {
     window.location.reload();
     shuffle();
-  }
-
-  /* Contact Page */
-
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    confirmationPage();
-  });
-
-  /**
-   * Redirects user to a 'message sent' confirmation page after filling out contact form
-   */
-  function confirmationPage() {
-    console.log('Hello');
-    window.location.replace("https://8000-rafaelawetz-witchtanich-urrvfnefpje.ws-eu106.gitpod.io/contact-confirmation.html");
   }
 
   // Closing brackets from DOMContentLoaded
