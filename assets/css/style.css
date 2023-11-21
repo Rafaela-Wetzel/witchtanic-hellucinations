@@ -58,14 +58,6 @@ a:focus {
 /* Game Page */
 
 /* Modal Styles */
-/* wird nicht genutzt??
-.modal-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f5954e;
-  margin: 1rem 0;
-}*/
 
 .modal {
   display: none;
@@ -73,8 +65,8 @@ a:focus {
   z-index: 1;
   text-align: center;
   left: 0;
-  top: 0.5rem;
-  width: 170%;
+  top: 0;
+  width: 100%;
   height: 100%;
   overflow: auto;
   background-color: hsla(25.3, 96%, 54%, 0.5);
@@ -83,11 +75,11 @@ a:focus {
 
 .modal-content {
   background-color: #f5954e;
-  margin: 15% auto;
+  margin: 4% auto;
   padding: 1.25rem;
   border: thick solid #000;
   box-shadow: 0.5rem 0.5rem 0.5rem #1f1d19;
-  width: 50%;
+  width: 80%;
 }
 
 .could-worse-size {
@@ -401,12 +393,12 @@ a:focus {
 
   /* Modal Styles */
 
-  .modal {
+  /*.modal {
     left: -12.5rem;
     top: -4rem;
     width: 170%;
     height: 120%;
-  }
+  }*/
 
   .creepster-2rem {
     font-size: 2rem;
@@ -495,12 +487,12 @@ a:focus {
     width: 20rem;
   }
 
-  .modal {
+  /*.modal {
     left: -16.5rem;
     top: -4rem;
     width: 170%;
     height: 120%;
-  }
+  }*/
 
   .cat-size {
     height: 25rem;
@@ -583,12 +575,12 @@ a:focus {
     width: 20rem;
   }
 
-  .modal {
+  /*.modal {
     left: -15.5rem;
     top: -8rem;
     width: 150%;
     height: 150%;
-  }
+  }*/
 
   .pumpkin-smoke {
     height: 27rem;
@@ -659,12 +651,12 @@ a:focus {
     width: 18rem;
   }
 
-  .modal {
+  /*.modal {
     left: -19rem;
     top: -10rem;
     width: 150%;
     height: 140%;
-  }
+  }*/
 
   .pumpkin-smoke {
     height: 28rem;
