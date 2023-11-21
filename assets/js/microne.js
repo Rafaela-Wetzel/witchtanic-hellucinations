@@ -1,3 +1,11 @@
+/* Code for Microne music player taken from:
+https://github.com/kodedninja/microne/tree/master
+https://microne.vercel.app/
+*/ 
+
+const music = new Microne(document.getElementById('player'));
+music.source('assets/music/inager.mp3');
+
 function Microne(parent_el) {
 	this.audio = null
 	this._src_ = null
