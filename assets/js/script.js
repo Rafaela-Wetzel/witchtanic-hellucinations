@@ -18,7 +18,7 @@ let firstCard, secondCard;
 
 // Disables the memory cards to be clickable until user has pressed the start button
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementsByClassName('memory-game')[0].classList.add('button-off');
+  document.getElementsByClassName('memory-game')[0].classList.add('cards-no-click');
 
   // Adds event listeners to all elements with close-modal class 
   for (var i = 0; i < closeClick.length; i++) {
@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
   /**
    * Starts game when clicking on "Start Game" button; 
    * starts countdown and shuffles the cards;
-   * makes cards clickable again by removing 'button-off';
+   * makes cards clickable again by removing 'cards-no-click';
    * hides 'Start Game' button and shows 'End Game' button instead
    */
   function startGame() {
     startTimer();
     shuffle();
-    document.getElementsByClassName('memory-game')[0].classList.remove('button-off');
+    document.getElementsByClassName('memory-game')[0].classList.remove('cards-no-click');
     document.getElementById('time-placeholder').classList.add('display-none');
     startButton.classList.add('display-none');
     endButton.classList.remove('display-none');

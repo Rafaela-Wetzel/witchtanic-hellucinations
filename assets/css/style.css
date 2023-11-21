@@ -44,7 +44,7 @@ nav {
 }
 
 nav>a {
-  color: #000000;
+  color: #000;
   font-size: 1.1rem;
   padding: 0 0.3rem;
   letter-spacing: 0.1rem;
@@ -393,13 +393,6 @@ a:focus {
 
   /* Modal Styles */
 
-  /*.modal {
-    left: -12.5rem;
-    top: -4rem;
-    width: 170%;
-    height: 120%;
-  }*/
-
   .creepster-2rem {
     font-size: 2rem;
   }
@@ -487,13 +480,6 @@ a:focus {
     width: 20rem;
   }
 
-  /*.modal {
-    left: -16.5rem;
-    top: -4rem;
-    width: 170%;
-    height: 120%;
-  }*/
-
   .cat-size {
     height: 25rem;
     width: 18rem;
@@ -575,13 +561,6 @@ a:focus {
     width: 20rem;
   }
 
-  /*.modal {
-    left: -15.5rem;
-    top: -8rem;
-    width: 150%;
-    height: 150%;
-  }*/
-
   .pumpkin-smoke {
     height: 27rem;
     width: 20rem;
@@ -650,13 +629,6 @@ a:focus {
     height: 24rem;
     width: 18rem;
   }
-
-  /*.modal {
-    left: -19rem;
-    top: -10rem;
-    width: 150%;
-    height: 140%;
-  }*/
 
   .pumpkin-smoke {
     height: 28rem;
