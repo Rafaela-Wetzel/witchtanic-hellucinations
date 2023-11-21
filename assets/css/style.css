@@ -8,6 +8,7 @@
 * {
   background-color: #FA7819;
   font-family: 'Black Ops One', 'sans-serif';
+  font-size: 1.2rem;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -33,7 +34,7 @@ body {
 
 .main-heading {
   font-family: 'Creepster', 'sans-serif';
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   margin-top: 0;
   margin-bottom: 1.3rem;
 }
@@ -295,11 +296,12 @@ a:focus {
 .rules-div {
   border: 0.5rem outset #000;
   width: 22rem;
-  height: 18rem;
+  height: 26.8rem;
   list-style-type: none;
   box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
   color: hsl(25, 96%, 54%);
   margin: 2rem 0 15rem 0;
+  line-height: 2rem;
 }
 
 .black {
@@ -420,7 +422,7 @@ a:focus {
 
   .rules-div {
     width: 35rem;
-    height: 14.5rem;
+    height: 20.9rem;
     margin-top: 2rem;
   }
 
@@ -499,7 +501,7 @@ a:focus {
 
   .rules-div {
     width: 47rem;
-    height: 14.5rem;
+    height: 18.9rem;
     margin-top: 2rem;
   }
 
@@ -576,7 +578,7 @@ a:focus {
 
   .rules-div {
     width: 50rem;
-    height: 14.5rem;
+    height: 18.9rem;
     margin-top: 2rem;
   }
 
@@ -651,7 +653,7 @@ a:focus {
 
   .rules-div {
     width: 50rem;
-    height: 14.5rem;
+    height: 18.8rem;
     margin-top: 2rem;
   }
 
