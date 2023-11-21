@@ -75,12 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /** 
-   * Creates a countdown from 20 to 0
+   * Creates a countdown from 40 to 0
    */
   function startTimer() {
     const time = setInterval(function () {
       totalTime--;
-      console.log(totalTime);
       countdown.innerText = totalTime;
       if (totalTime === 0) {
         clearInterval(time);
