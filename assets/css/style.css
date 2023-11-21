@@ -103,7 +103,7 @@ a:focus {
   border: thick solid black;
 }
 
-.pumpkin-size {
+.pumpkin-smoke {
   height: 16rem;
   width: 12rem;
   border: thick solid black;
@@ -331,6 +331,12 @@ a:focus {
   color: #fff;
 }
 
+.pumpkin-size {
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem 0;
+}
+
 /* Media Queries */
 
 /* Media query: large or landscape phones (576px and up) */
@@ -378,7 +384,7 @@ a:focus {
     width: 17rem;
   }
 
-  .pumpkin-size {
+  .pumpkin-smoke {
     height: 24rem;
     width: 18rem;
   }
@@ -456,7 +462,7 @@ a:focus {
     border: thick solid black;
   }
 
-  .pumpkin-size {
+  .pumpkin-smoke {
     height: 25rem;
     width: 18rem;
   }
@@ -533,7 +539,7 @@ a:focus {
     height: 150%;
   }
 
-  .pumpkin-size {
+  .pumpkin-smoke {
     height: 27rem;
     width: 20rem;
   }
@@ -609,7 +615,7 @@ a:focus {
     height: 140%;
   }
 
-  .pumpkin-size {
+  .pumpkin-smoke {
     height: 28rem;
     width: 20rem;
   }  
