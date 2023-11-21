@@ -8,7 +8,7 @@
 * {
   background-color: #FA7819;
   font-family: 'Black Ops One', 'sans-serif';
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -34,7 +34,7 @@ body {
 
 .main-heading {
   font-family: 'Creepster', 'sans-serif';
-  font-size: 3.3rem;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 1.3rem;
 }
@@ -58,13 +58,22 @@ a:focus {
 /* Game Page */
 
 /* Modal Styles */
+/* wird nicht genutzt??
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5954e;
+  margin: 1rem 0;
+}*/
+
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
   text-align: center;
-  left: -8rem;
-  top: 3rem;
+  left: 0;
+  top: 0.5rem;
   width: 170%;
   height: 100%;
   overflow: auto;
@@ -113,11 +122,13 @@ a:focus {
   height: 16rem;
   width: 12rem;
   border: thick solid black;
+  margin: 2rem 0;
 }
 
 .cat-size {
   height: 20rem;
   width: 15rem;
+  margin: 1rem 0;
   border: thick solid black;
 
 }
@@ -126,20 +137,11 @@ a:focus {
   margin-top: 1rem;
 }
 
-.modal-flex {
-  display: flex;
-  flex-direction: column;
-  background-color: #f5954e;
-  align-items: center;
-  margin: 1rem 0;
-  gap: 1rem;
-}
-
 /* Main Styles */
 
 .controls-box {
   display: flex;
-  gap: 4rem;
+  gap: 2.5rem;
   justify-content: center;
   margin: 2rem;
 }
@@ -175,7 +177,7 @@ a:focus {
   font-size: 1.2rem;
   color: #000;
   height: 3rem;
-  width: 8rem;
+  width: 6rem;
   padding: 0.3rem 0;
 }
 
@@ -208,8 +210,8 @@ a:focus {
 .memory-game {
   display: flex;
   flex-wrap: wrap;
-  width: 20rem;
-  height: 17rem;
+  width: 18.75rem;
+  height: 16rem;
   margin: auto;
   perspective: 62.5rem;
 }
@@ -296,11 +298,11 @@ a:focus {
 .rules-div {
   border: 0.5rem outset #000;
   width: 22rem;
-  height: 26.8rem;
+  height: 25rem;
   list-style-type: none;
   box-shadow: 0.5rem 0.5rem 0.2rem #1f1d19;
   color: hsl(25, 96%, 54%);
-  margin: 2rem 0 15rem 0;
+  margin: 1rem 0 15rem 0;
   line-height: 2rem;
 }
 
@@ -363,6 +365,10 @@ a:focus {
 
   /* General Styles */
 
+  nav>a {
+    font-size: 1.4rem;
+  }
+
   .rectangles {
     width: 8rem;
   }
@@ -374,6 +380,14 @@ a:focus {
   }
 
   /* Game Page */
+
+  .controls-box {
+    gap: 6rem;    
+  }
+
+  .timer-style {
+    width: 8rem;
+  }
 
   .memory-game {
     width: 33rem;
@@ -406,6 +420,10 @@ a:focus {
   .pumpkin-smoke {
     height: 24rem;
     width: 18rem;
+  }
+
+  .could-worse-size {
+    font-size: 3rem;
   }
   
   /* Main Styles */
@@ -445,7 +463,16 @@ a:focus {
     font-size: 4rem;
   }
 
+  nav>a {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
   /* Game Page */
+
+  .controls-box {
+    gap: 6rem;    
+  }
 
   .memory-game {
     width: 40rem;
@@ -526,6 +553,11 @@ a:focus {
 
   .main-heading {
     font-size: 5rem;
+  }
+
+  nav>a {
+    font-size: 1.7rem;
+    padding: 0 1.6rem;
   }
 
   /* Game Page */
