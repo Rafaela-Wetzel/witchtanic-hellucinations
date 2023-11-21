@@ -270,6 +270,11 @@ a:focus {
   color: #f5954e;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 .rules-div {
   border: 0.5rem outset #000;
   width: 22rem;
@@ -393,7 +398,7 @@ a:focus {
   .rules-div {
     width: 35rem;
     height: 14.5rem;
-    margin: 2rem 0 0 0.4rem;
+    margin-top: 2rem;
   }
 
   /* Contact Page */
@@ -472,7 +477,7 @@ a:focus {
   .rules-div {
     width: 47rem;
     height: 14.5rem;
-    margin: 2rem 0 0 0.4rem;
+    margin-top: 2rem;
   }
 
   /* Contact Page */
@@ -549,7 +554,7 @@ a:focus {
   .rules-div {
     width: 50rem;
     height: 14.5rem;
-    margin: 2rem 0 0 6rem;
+    margin-top: 2rem;
   }
 
   /* Contact Page */
@@ -624,21 +629,9 @@ a:focus {
   .rules-div {
     width: 50rem;
     height: 14.5rem;
-    margin: 2rem 0 0 13rem;
+    margin-top: 2rem;
   }
 
   /* Contact Page */
-
-}
-
-@media screen and (min-width: 1350px) {
-
- /* Rules Page */
-
- .rules-div {
-  width: 50rem;
-  height: 14.5rem;
-  margin: 2rem 0 0 17rem;
-}
 
 }
