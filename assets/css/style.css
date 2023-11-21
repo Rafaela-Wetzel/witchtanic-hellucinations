@@ -97,6 +97,11 @@ a:focus {
   font-size: 2rem;
 }
 
+.creepster-3rem {
+  font-family: 'Creepster', 'sans-serif';
+  font-size: 3rem;
+}
+
 .picture-size-1 {
   height: 16rem;
   width: 14rem;
