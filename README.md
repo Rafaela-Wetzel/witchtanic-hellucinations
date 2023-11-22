@@ -196,8 +196,11 @@ When the message has been sent successfully the user will see a contact confirma
 
 Some ideas what could be added to the homepage in future:
 
-  - Adding three buttons for game difficulty: Easy (50 seconds), Average (40 seconds), Hard (30 seconds)
-  - 
+### Accessibility
+
+- Adding three buttons for game difficulty: Easy (50 seconds), Average (40 seconds), Hard (30 seconds)
+- Having the option of hearing the countdown timer when seeing is not possible
+- On top of having added alt text to the playing cards making them keyboard focusable 
 
 # Testing 
 

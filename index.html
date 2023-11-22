@@ -22,9 +22,9 @@
         <header>
             <h1 class="main-heading">Witchtanic Hellucinations</h1>
             <nav>
-                <a href="index.html">Game</a>
-                <a href="rules.html">Rules</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" aria-label="Go to the main game page.">Game</a>
+                <a href="rules.html" aria-label="Go to the rules page.">Rules</a>
+                <a href="contact.html" aria-label="Go to the contact page.">Contact</a>
             </nav>
         </header>
     </section>
@@ -36,10 +36,10 @@
             <div class="controls-box">
                 <div>
                     <!-- Adapted from: Source [1] -->
-                    <button id="open-modal" class="rectangles hover-white">Start</button>
-                    <button id="end-game" class="rectangles hover-white display-none">End</button>
+                    <button id="open-modal" class="rectangles hover-white" aria-label="Start game button.">Start</button>
+                    <button id="end-game" class="rectangles hover-white display-none" aria-label="End game button.">End</button>
                 </div>
-                <button id="player"></button>
+                <button id="player" aria-label="Button that triggers audio play function."></button>
                 <div>
                     <!--Timer-->
                     <div class="timer-style"><span id="countdown" class="timer-span"></span><span class="timer-span"
@@ -68,11 +68,11 @@
                     <img src="assets/images/conjuring-witch.jpg" class="picture-size-1"
                         alt="A picture of a witchy looking woman looking straight into the camera. She holds a magical book in her left hand and raises the other in a conjuring, ominous gesture. The left side of the book has caught fire, and the general vibe of the picture is dark and mysterious.">
                     <br><br>
-                    <button id="start-game" class="button-style button-height margin-10 close-modal">No, my beloved
+                    <button id="start-game" class="button-style button-height margin-10 close-modal" aria-label="Button to start the game.">No, my beloved
                         enchantress!
                         &#10; I'll start immediately!</button>
                     <br><br>
-                    <button class="button-style object-size close-modal">Run away</button>
+                    <button class="button-style object-size close-modal" aria-label="Button that closes the start modal window. Redirects to the main page.">Run away</button>
                 </div>
             </div>
             <!-- Win Modal -->
@@ -96,7 +96,7 @@
                         <img src="assets/images/witches-cat.jpg" class="cat-size"
                             alt="A picture of a grey-haired cat staring and sitting on a light blue antique writing desk. A wooden chair in front and candles as well as a lamp on the desk decorate the scene.">
                     </div>
-                    <button class="button-style object-size close close-modal reload">Begin your duty</button>
+                    <button class="button-style object-size close close-modal reload" aria-label="Button that closes the winning modal window. Redirects to the main page.">Begin your duty</button>
                 </div>
             </div>
             <!-- Lose Modal -->
@@ -119,7 +119,7 @@
                             decoration in the witches house<br><br>...until it rots away.<br><br>
                         </p>
                     </div>
-                    <button class="button-style object-size close close-modal reload">Escape your fate</button>
+                    <button class="button-style object-size close close-modal reload" aria-label="Button that closes the losing modal window. Redirects to the main page.">Escape your fate</button>
                 </div>
             </div>
             <!-- Source [1] end-->
