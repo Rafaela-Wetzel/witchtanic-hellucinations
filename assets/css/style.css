@@ -18,16 +18,12 @@
   text-align: center;
 }
 
-.margin-10 {
+.margin-06 {
   margin: 0.6rem 0;
 }
 
 body {
   height: 100vh;
-}
-
-.button-off {
-  pointer-events: none;
 }
 
 /* Header & Nav Styles */
@@ -82,51 +78,47 @@ a:focus {
   width: 80%;
 }
 
-.could-worse-size {
+.win-modal-header-size {
   font-family: 'Creepster', 'sans-serif';
   font-size: 2rem;
   background-color: #f5954e;
 }
 
-.game-over-size {
+.lose-modal-header-size {
   font-family: 'Creepster', 'sans-serif';
   font-size: 3.5rem;
   background-color: #f5954e;
 }
 
-.creepster-2rem {
+.creepster-font-2rem {
   font-family: 'Creepster', 'sans-serif';
   font-size: 2rem;
 }
 
-.creepster-3rem {
+.creepster-font-3rem {
   font-family: 'Creepster', 'sans-serif';
   font-size: 3rem;
 }
 
-.picture-size-1 {
+.start-modal-picsize {
   height: 16rem;
   width: 14rem;
   border: thick solid black;
 }
 
-.pumpkin-smoke {
+.lose-modal-picsize {
   height: 16rem;
   width: 12rem;
   border: thick solid black;
   margin: 2rem 0;
 }
 
-.cat-size {
+.win-modal-picsize {
   height: 20rem;
   width: 15rem;
   margin: 1rem 0;
   border: thick solid black;
 
-}
-
-.margin-top {
-  margin-top: 1rem;
 }
 
 /* Main Styles */
@@ -138,7 +130,7 @@ a:focus {
   margin: 2rem;
 }
 
-.rectangles {
+.start-end-button {
   background-color: #000;
   border: thick outset #6d6772;
   font-size: 1rem;
@@ -154,12 +146,12 @@ a:focus {
   cursor: pointer;
 }
 
-.object-size {
+.close-modal-button-size {
   width: 13rem;
   height: 3rem;
 }
 
-.button-height {
+.start-button-height {
   height: 5rem;
 }
 
@@ -173,7 +165,7 @@ a:focus {
   padding: 0.3rem 0;
 }
 
-.timer-span {
+.countdown-span {
   background-color: #FA7819;
   font-size: 1rem;
   color: #000;
@@ -210,6 +202,7 @@ a:focus {
   height: 16rem;
   margin: auto;
   perspective: 62.5rem;
+  margin-bottom: 12rem;
 }
 
 .memory-card {
@@ -264,13 +257,9 @@ a:focus {
   color: #000000;
 }
 
-.margin-top {
-  margin-top: 12rem;
-}
-
 /* Rules Page */
 
-.padding-10 {
+.padding-06 {
   padding: 0.6rem 0;
 }
 
@@ -278,7 +267,7 @@ a:focus {
   background-color: #f5954e;
 }
 
-.button-border {
+.border-style {
   border: medium dotted #f5954e;
   padding: 0.3rem;
   margin: 0.3rem;
@@ -289,6 +278,7 @@ a:focus {
 .flex {
   display: flex;
   justify-content: center;
+  margin-bottom: 13.5rem;
 }
 
 .rules-div {
@@ -310,7 +300,7 @@ a:focus {
 
 .form-style {
   font-size: 1.2rem;
-  margin: 2rem 0 8.5rem 0;
+  margin: 2rem 0 21.1rem 0;
 }
 
 .input-field-style {
@@ -326,25 +316,25 @@ a:focus {
 
 /* Contact Confirmation Page */
 
-.link-style {
+.main-page-button {
   background-color: #000;
   color: #FA7819;
 }
 
-.div-mainpage > a {
+.main-page-button-div > a {
   text-decoration: none;
 }
 
-.span-mainpage {
+.main-page-button-span {
   padding: 0.8rem 4rem;
 }
 
-.div-mainpage {
+.main-page-button-div {
   margin: 2rem 0 27rem;
 }
 
-.link-style:hover,
-.link-style:focus {
+.main-page-button:hover,
+.main-page-button:focus {
   color: #fff;
 }
 
@@ -365,7 +355,7 @@ a:focus {
     font-size: 1.4rem;
   }
 
-  .rectangles {
+  .start-end-button {
     width: 8rem;
   }
 
@@ -397,27 +387,27 @@ a:focus {
 
   /* Modal Styles */
 
-  .creepster-2rem {
+  .creepster-font-2rem {
     font-size: 2rem;
   }
 
-  .picture-size-1 {
+  .start-modal-picsize {
     height: 20rem;
     width: 17rem;
   }
 
-  .pumpkin-smoke {
+  .lose-modal-picsize {
     height: 24rem;
     width: 18rem;
   }
 
-  .could-worse-size {
+  .win-modal-header-size {
     font-size: 3rem;
   }
   
   /* Main Styles */
 
-  .button-height {
+  .start-button-height {
     height: 4rem;
   }
 
@@ -442,7 +432,7 @@ a:focus {
 
   /* General Styles */
 
-  .rectangles {
+  .start-end-button {
     width: 8rem;
   }
 
@@ -475,22 +465,22 @@ a:focus {
 
   /* Modal Styles */
 
-  .creepster-2rem {
+  .creepster-font-2rem {
     font-size: 2.5rem;
   }
 
-  .picture-size-1 {
+  .start-modal-picsize {
     height: 26rem;
     width: 20rem;
   }
 
-  .cat-size {
+  .win-modal-picsize {
     height: 25rem;
     width: 18rem;
     border: thick solid black;
   }
 
-  .pumpkin-smoke {
+  .lose-modal-picsize {
     height: 25rem;
     width: 18rem;
   }
@@ -498,7 +488,7 @@ a:focus {
 
   /* Main Styles */
 
-  .button-height {
+  .start-button-height {
     height: 3rem;
   }
 
@@ -527,7 +517,7 @@ a:focus {
     padding: 0 15rem;
   }
 
-  .rectangles {
+  .start-end-button {
     width: 8rem;
   }
 
@@ -556,16 +546,16 @@ a:focus {
 
   /* Modal Styles */
 
-  .creepster-2rem {
+  .creepster-font-2rem {
     font-size: 2.5rem;
   }
 
-  .picture-size-1 {
+  .start-modal-picsize {
     height: 26rem;
     width: 20rem;
   }
 
-  .pumpkin-smoke {
+  .lose-modal-picsize {
     height: 27rem;
     width: 20rem;
   }
@@ -573,7 +563,7 @@ a:focus {
 
   /* Main Styles */
 
-  .button-height {
+  .start-button-height {
     height: 3rem;
   }
 
@@ -601,7 +591,7 @@ a:focus {
     padding: 0 20rem;
   }
 
-  .rectangles {
+  .start-end-button {
     width: 8rem;
   }
 
@@ -625,23 +615,23 @@ a:focus {
 
   /* Modal Styles */
 
-  .creepster-2rem {
+  .creepster-font-2rem {
     font-size: 2.5rem;
   }
 
-  .picture-size-1 {
+  .start-modal-picsize {
     height: 24rem;
     width: 18rem;
   }
 
-  .pumpkin-smoke {
+  .lose-modal-picsize {
     height: 28rem;
     width: 20rem;
   }  
 
   /* Main Styles */
 
-  .button-height {
+  .start-button-height {
     height: 3rem;
   }
 
