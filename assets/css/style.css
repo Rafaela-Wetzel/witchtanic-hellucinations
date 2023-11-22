@@ -198,6 +198,10 @@ a:focus {
   cursor: pointer;
 }
 
+.cards-not-clickable {
+  pointer-events: none;
+}
+
 /* Source: Tutorial [4]*/
 .memory-game {
   display: flex;
@@ -306,7 +310,7 @@ a:focus {
 
 .form-style {
   font-size: 1.2rem;
-  margin-top: 2rem;
+  margin: 2rem 0 8.5rem 0;
 }
 
 .input-field-style {
