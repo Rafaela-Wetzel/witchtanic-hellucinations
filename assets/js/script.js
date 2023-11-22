@@ -1,11 +1,13 @@
+// Variables
+
 let startButton = document.getElementById('open-modal');
 let endButton = document.getElementById('end-game');
 let startFromNew = document.getElementsByClassName('reload');
 
-var startModal = document.getElementById('modalStart');
-var winModal = document.getElementById('modalWin');
-var loseModal = document.getElementById('modalLose');
-var closeClick = document.getElementsByClassName('close-modal');
+let startModal = document.getElementById('modalStart');
+let winModal = document.getElementById('modalWin');
+let loseModal = document.getElementById('modalLose');
+let closeClick = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
@@ -16,16 +18,26 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-// Disables the memory cards to be clickable until user has pressed the start button
+// Functions
+
 document.addEventListener('DOMContentLoaded', function () {
+  // Disables the memory cards to be clickable until user has pressed the start button
   document.getElementsByClassName('memory-game')[0].classList.add('cards-not-clickable');
+
+// Event Listeners
+
+document.getElementById('start-game').addEventListener('click', startGame);
+document.getElementById('end-game').addEventListener('click', endGame);
+cards.forEach(card => card.addEventListener('click', flipCard));
+
+// Modals
 
   // Adds event listeners to all elements with close-modal class 
   for (var i = 0; i < closeClick.length; i++) {
     closeClick[i].addEventListener('click', closeModal);
   };
 
-  // Event listener for 'Start Game' modal box 
+  // Adds event listener for 'Start Game' modal box 
   startButton.addEventListener('click', openModal);
 
   /**
@@ -44,11 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
     startModal.style.display = 'block';
   }
 
-  document.getElementById('start-game').addEventListener('click', startGame);
-  document.getElementById('end-game').addEventListener('click', endGame);
+// Game Functions
 
   /**
-   * Starts game when clicking on "Start Game" button; 
+   * Starts game when clicking on 'Start Game' button; 
    * starts countdown and shuffles the cards;
    * makes cards clickable again by removing 'cards-no-click';
    * hides 'Start Game' button and shows 'End Game' button instead
@@ -87,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
   }
 
-  // Source: Tutorial [4] - How to create a Memory Game 
+// Credits: Tutorial [4]
 
   /** 
    * Makes the cards flip 
@@ -122,8 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /**
-   * Accomplishes that the matching card pairs 
-   * stay uncovered and can be clicked no longer;
+   * Matching card pairs stay uncovered and can be clicked no longer;
    * match count calls winGame function once
    * 8 card matches have been found
    */
@@ -165,14 +175,12 @@ document.addEventListener('DOMContentLoaded', function () {
    */
   function shuffle() {
     cards.forEach(card => {
-      let randomPos = Math.floor(Math.random() * 12);
+      const randomPos = Math.floor(Math.random() * 12);
       card.style.order = randomPos;
     });
   }
 
-  cards.forEach(card => card.addEventListener('click', flipCard));
-
-  // Source end: Tutorial [4]
+  // Credits End: Tutorial [4]
 
   /** 
    * Opens a modal window that displays winning message;

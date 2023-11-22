@@ -121,7 +121,16 @@ a:focus {
 
 }
 
+.close-modal-button-size {
+  width: 13rem;
+  height: 3rem;
+}
+
 /* Main Styles */
+
+.cards-not-clickable {
+  pointer-events: none;
+}
 
 .controls-box {
   display: flex;
@@ -144,11 +153,6 @@ a:focus {
 .hover-white:hover:focus {
   color: #fff;
   cursor: pointer;
-}
-
-.close-modal-button-size {
-  width: 13rem;
-  height: 3rem;
 }
 
 .start-button-height {
@@ -190,11 +194,8 @@ a:focus {
   cursor: pointer;
 }
 
-.cards-not-clickable {
-  pointer-events: none;
-}
+/* Credits: Tutorial [4]*/
 
-/* Source: Tutorial [4]*/
 .memory-game {
   display: flex;
   flex-wrap: wrap;
@@ -240,21 +241,21 @@ a:focus {
   transform: rotateY(180deg);
 }
 
-/* Source End: Tutorial [4]*/
+/* Credits End: Tutorial [4]*/
 
 /* Footer */
 
 .footnote-style {
   text-align: center;
   margin-top: 3em;
-  border-top: 0.12rem solid #000000;
+  border-top: 0.12rem solid #000;
   padding: 0.3rem 1rem;
   display: flex;
   justify-content: space-between;
 }
 
 .color-black {
-  color: #000000;
+  color: #000;
 }
 
 /* Rules Page */
