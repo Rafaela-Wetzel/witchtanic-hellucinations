@@ -35,7 +35,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   // Adds event listeners to all elements with close-modal class 
   for (var i = 0; i < closeClick.length; i++) {
     closeClick[i].addEventListener('click', closeModal);
-  };
+  }
 
   // Adds event listener for 'Start Game' modal box 
   startButton.addEventListener('click', openModal);
@@ -90,7 +90,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   function startTimer() {
     const time = setInterval(function () {
       totalTime--;
-      countdown.innerText = totalTime;
+      timer.innerText = totalTime;
       if (totalTime === 0) {
         clearInterval(time);
         loseGame();
@@ -128,9 +128,11 @@ cards.forEach(card => card.addEventListener('click', flipCard));
    * if they don't match unflipCards is called
    */
   function checkForMatch() {
-    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-    isMatch ? disableCards() : unflipCards();
-  }
+    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+      disableCards();
+    } else {
+      unflipCards();
+    }}
 
   /**
    * Matching card pairs stay uncovered and can be clicked no longer;
@@ -145,7 +147,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     matchCount++;
     if (matchCount === 8) {
       winGame();
-    };
+    }
   }
 
   /**
@@ -162,7 +164,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
       secondCard.classList.remove('flip');
 
       resetBoard();
-    }, 1500)
+    }, 1500);
   }
 
   function resetBoard() {
@@ -188,12 +190,11 @@ cards.forEach(card => card.addEventListener('click', flipCard));
    * to the button that closes the modal window when clicked
    */
   function winGame() {
-    loseGame = null;
     winModal.style.display = 'block';
 
     for (var i = 0; i < startFromNew.length; i++) {
       startFromNew[i].addEventListener('click', reload);
-    };
+    }
   }
 
   /**
@@ -206,7 +207,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
     for (var i = 0; i < startFromNew.length; i++) {
       startFromNew[i].addEventListener('click', reload);
-    };
+    }
   }
 
   /**

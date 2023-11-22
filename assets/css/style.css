@@ -412,10 +412,6 @@ a:focus {
     height: 4rem;
   }
 
-  /* Source: Tutorial [4]*/
-
-  /* Footer */
-
   /* Rules Page */
 
   .rules-div {
@@ -423,9 +419,6 @@ a:focus {
     height: 20.9rem;
     margin-top: 2rem;
   }
-
-  /* Contact Page */
-
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -493,10 +486,6 @@ a:focus {
     height: 3rem;
   }
 
-  /* Source: Tutorial [4]*/
-
-  /* Footer */
-
   /* Rules Page */
 
   .rules-div {
@@ -504,9 +493,6 @@ a:focus {
     height: 18.9rem;
     margin-top: 2rem;
   }
-
-  /* Contact Page */
-
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -561,16 +547,11 @@ a:focus {
     width: 20rem;
   }
   
-
   /* Main Styles */
 
   .start-button-height {
     height: 3rem;
   }
-
-  /* Source: Tutorial [4]*/
-
-  /* Footer */
 
   /* Rules Page */
 
@@ -579,9 +560,6 @@ a:focus {
     height: 18.9rem;
     margin-top: 2rem;
   }
-
-  /* Contact Page */
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -636,10 +614,6 @@ a:focus {
     height: 3rem;
   }
 
-  /* Source: Tutorial [4]*/
-
-  /* Footer */
-
   /* Rules Page */
 
   .rules-div {
@@ -647,7 +621,4 @@ a:focus {
     height: 18.8rem;
     margin-top: 2rem;
   }
-
-  /* Contact Page */
-
 }

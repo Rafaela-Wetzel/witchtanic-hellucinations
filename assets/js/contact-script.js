@@ -12,4 +12,4 @@ window.onload = function () {
                 alert('Unfortunately your message has not been sent due to an error. Please try again.');
             });
     });
-}
+};
