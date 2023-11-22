@@ -198,7 +198,7 @@ Some ideas what could be added to the homepage in future:
 
 ### Accessibility
 
-- Adding three buttons for game difficulty: Easy (50 seconds), Average (40 seconds), Hard (30 seconds)
+- Three buttons for game difficulty: Easy (50 seconds), Average (40 seconds), Hard (30 seconds)
 - Having the option of hearing the countdown timer when seeing is not possible
 - On top of having added alt text to the playing cards making them keyboard focusable 
 
@@ -207,6 +207,33 @@ Some ideas what could be added to the homepage in future:
 I have tested the responsiveness of my homepage with Firefox, Google Chrome and Microsoft Edge Dev Tools and checked the following screen sizes: 360px (Galaxy S5 Android 5 on DevTools and my own mobile phone Moto G50), 576px, 768px, 992px and 1200px (DevTools and my own laptop Lenovo ThinkPad X260). I confirm that the actions below work on all screen sizes.
 
 ## Testing Homepage Functions
+
+- I confirm that the navigation elements work and lead to the respective pages. The color changes from black to white when hovered over. 
+
+- I confirm that the audio is played when clicking the round element. Clicking once more stops the music.
+
+- I confirm that the cards cannot be uncovered without having started the game.
+
+- I confirm that the start modal opens up when the 'Start' button is clicked. I confirm that the 'Run away' button closes the modal and the 'No my beloved enchantress...' button starts the game and the countdown.
+
+- I confirm that the countdown runs from 40 to 0 and triggers the lose modal window if all of the card matches have not been found. I confirm that the "Escape your fate" button closes the modal window.
+
+- I confirm that the winning modal window is triggered when all card matches have been found before the countdown reaches zero. I confirm that the "Begin your duty" button closes the modal window.
+
+- I confirm that the page is reloaded and the cards shuffled and covered again after closing the winning or losing modal windows.
+
+- I confirm that when playing the game no more than 2 cards can be uncovered at once. I confirm that two equal cards stay uncovered and two unequal cards will be covered again.
+
+- I confirm that when clicking the "Start" button in the controls area it turns into an "End" button and vice versa. Clicking the end button will shuffle the cards once more.
+
+- I confirm that 
+
+- I confirm that 
+
+- I confirm that 
+
+- I confirm that 
+
 
 ## Testing Homepage Responsiveness
     
@@ -224,23 +251,29 @@ I have tested the responsiveness of my homepage with Firefox, Google Chrome and 
 
 ## Validator Testing
 
-- I confirm that no errors were returned when passing through the official [W3C validator](link)
+- I confirm that no errors were returned when passing through the official [W3C validator](link).
+The result is the same for all four pages.
 <br /><br />
-![A screenshot of the HTML W3C Validator result]()  
+![A screenshot of the HTML W3C Validator result](assets/readme-assets/html-validator.png)  
 
-- I confirm that no errors were returned when passing through the official [(Jigsaw) validator](link)
+- I confirm that no errors were returned when passing through the official [(Jigsaw) validator](link).
 <br /><br />
-![A screenshot of the CSS Jigsaw Validator result]()
+![A screenshot of the CSS Jigsaw Validator result](assets/readme-assets/css-validator.png)
 
-- I confirm that no errors were returned when passing through [JS Hint](https://jshint.com/)
+- I confirm that no major errors were returned when passing through [JS Hint](https://jshint.com/).
+The result is the same for all three JS files.
 <br /><br />
-![A screenshot of the JS Hint result]()
+![A screenshot of the JS Hint result](assets/readme-assets/js-hint.png)
 
 ## Lighthouse
+
+![A screenshot of the Lighthouse result](assets/readme-assets/lighthouse.png)
 
 ## Bugs & Problems
 
 - For the contact `<form>` I added an event listener so that the user would be redirected to the contact confirmation page once 'Send' had been clicked. After a lot of research and even though I did not see any obvious errors with my own JS code it still did not work and the function had not been triggered. I solved this by adding the redirection page link to the EmailJS function code directly. 
+
+- When I would play the game and win the start modal would be displayed. A few seconds later the losing modal showed on top even if I had won. I assume that the countdown continued running in the background until it reached zero and triggered the losing modal. To solve this I set the `loseModal` variable to an empty `function() { }`.
 
 ## Unfixed Bugs
 
@@ -288,19 +321,4 @@ https://github.com/kodedninja/microne/tree/master
 
 - Help and feedback from my mentor Oluwafemi Medale
 - README.md structure taken from [Anjalee Kulasinghe](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/blob/main/README.md)
-- Witchtanic Hellucinations title originally by US-band Acid Witch     
-
-## Misc    
-
-- Spooky sounds & cursor
-
-Maybe at a later point:
-- Levels of difficulty
-
-Take into account:
-- Accessibility / Keyboard-focussable
-- Card match count
-
-
-- Background picture? 
-- What can user do? See GitHub repo
+- Witchtanic Hellucinations title originally by US-band Acid Witch

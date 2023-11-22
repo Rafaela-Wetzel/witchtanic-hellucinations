@@ -11,7 +11,7 @@ let closeModalWindow = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
-let totalTime = 15;
+let totalTime = 41;
 
 const memoryCards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -145,7 +145,7 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
     resetBoard();
 
     matchCount++;
-    if (matchCount === 1) {
+    if (matchCount === 8) {
       winGame();
     }
   }
