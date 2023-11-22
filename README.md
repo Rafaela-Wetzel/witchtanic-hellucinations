@@ -232,11 +232,14 @@ I have tested the responsiveness of my homepage with Firefox, Google Chrome and 
 <br /><br />
 ![A screenshot of the CSS Jigsaw Validator result]()
 
+- I confirm that no errors were returned when passing through [JS Hint](https://jshint.com/)
+<br /><br />
+![A screenshot of the JS Hint result]()
+
 ## Lighthouse
 
 ## Bugs & Problems
 
-- When a user would have found all card matches in the last second before the count reached zero the winning message would be displayed, and after clicking 'confirm' the losing message would also be shown. To prevent this from happening I set loseGame() to null once the winGame() function had been triggered.
 - For the contact `<form>` I added an event listener so that the user would be redirected to the contact confirmation page once 'Send' had been clicked. After a lot of research and even though I did not see any obvious errors with my own JS code it still did not work and the function had not been triggered. I solved this by adding the redirection page link to the EmailJS function code directly. 
 
 ## Unfixed Bugs

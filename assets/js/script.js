@@ -2,18 +2,18 @@
 
 let startButton = document.getElementById('open-modal');
 let endButton = document.getElementById('end-game');
-let startFromNew = document.getElementsByClassName('reload');
+let reloadPage = document.getElementsByClassName('reload');
 
 let startModal = document.getElementById('modalStart');
 let winModal = document.getElementById('modalWin');
 let loseModal = document.getElementById('modalLose');
-let closeClick = document.getElementsByClassName('close-modal');
+let closeModalWindow = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
 let totalTime = 41;
 
-const cards = document.querySelectorAll('.memory-card');
+const memoryCards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('start-game').addEventListener('click', startGame);
 document.getElementById('end-game').addEventListener('click', endGame);
-cards.forEach(card => card.addEventListener('click', flipCard));
+memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
 // Modals
 
   // Adds event listeners to all elements with close-modal class 
-  for (var i = 0; i < closeClick.length; i++) {
-    closeClick[i].addEventListener('click', closeModal);
+  for (var i = 0; i < closeModalWindow.length; i++) {
+    closeModalWindow[i].addEventListener('click', closeModal);
   }
 
   // Adds event listener for 'Start Game' modal box 
@@ -66,7 +66,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
    */
   function startGame() {
     startTimer();
-    shuffle();
+    shuffleCards();
     document.getElementsByClassName('memory-game')[0].classList.remove('cards-not-clickable');
     document.getElementById('time-placeholder').classList.add('display-none');
     startButton.classList.add('display-none');
@@ -175,10 +175,10 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   /**
    * Shuffles the cards
    */
-  function shuffle() {
-    cards.forEach(card => {
+  function shuffleCards() {
+    memoryCards.forEach(memoryCard => {
       const randomPos = Math.floor(Math.random() * 12);
-      card.style.order = randomPos;
+      memoryCard.style.order = randomPos;
     });
   }
 
@@ -192,8 +192,8 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   function winGame() {
     winModal.style.display = 'block';
 
-    for (var i = 0; i < startFromNew.length; i++) {
-      startFromNew[i].addEventListener('click', reload);
+    for (var i = 0; i < reloadPage.length; i++) {
+      reloadPage[i].addEventListener('click', reload);
     }
   }
 
@@ -205,8 +205,8 @@ cards.forEach(card => card.addEventListener('click', flipCard));
   function loseGame() {
     loseModal.style.display = 'block';
 
-    for (var i = 0; i < startFromNew.length; i++) {
-      startFromNew[i].addEventListener('click', reload);
+    for (var i = 0; i < reloadPage.length; i++) {
+      reloadPage[i].addEventListener('click', reload);
     }
   }
 
@@ -215,8 +215,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
    */
   function reload() {
     window.location.reload();
-    shuffle();
+    shuffleCards();
   }
 
-  // Closing brackets from DOMContentLoaded
 });
