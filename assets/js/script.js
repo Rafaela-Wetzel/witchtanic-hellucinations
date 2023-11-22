@@ -11,7 +11,7 @@ let closeModalWindow = document.getElementsByClassName('close-modal');
 
 let timer = document.getElementById('countdown');
 let matchCount = 0;
-let totalTime = 41;
+let totalTime = 15;
 
 const memoryCards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
@@ -145,7 +145,7 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
     resetBoard();
 
     matchCount++;
-    if (matchCount === 8) {
+    if (matchCount === 1) {
       winGame();
     }
   }
@@ -191,6 +191,7 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
    */
   function winGame() {
     winModal.style.display = 'block';
+    loseModal = function() { };
 
     for (var i = 0; i < reloadPage.length; i++) {
       reloadPage[i].addEventListener('click', reload);
