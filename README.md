@@ -194,7 +194,10 @@ When the message has been sent successfully the user will see a contact confirma
 
 ## Features Left to Implement
 
-Some ideas what could be added to the homepage are:
+Some ideas what could be added to the homepage in future:
+
+  - Adding three buttons for game difficulty: Easy (50 seconds), Average (40 seconds), Hard (30 seconds)
+  - 
 
 # Testing 
 

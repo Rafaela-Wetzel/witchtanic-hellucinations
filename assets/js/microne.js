@@ -15,7 +15,7 @@ function Microne(parent_el) {
 	this.p_char = '▶'
 	this.s_char = '||'
 
-	this.el = document.createElement('div')
+	this.el = document.createElement('button')
 	_apply_style(this.el, {
 		width: '100%',
 		height: '100%',
@@ -23,7 +23,7 @@ function Microne(parent_el) {
 		position: 'relative'
 	})
 
-	this.fill_el = document.createElement('div')
+	this.fill_el = document.createElement('button')
 	_apply_style(this.fill_el, {
 		background: '#eee',
 		height: '100%',
@@ -32,7 +32,7 @@ function Microne(parent_el) {
 	})
 	this.el.appendChild(this.fill_el)
 
-	this.play_button = document.createElement('div')
+	this.play_button = document.createElement('button')
 	this.play_button.innerHTML = this.p_char
 	_apply_style(this.play_button, {
 		cursor: 'pointer',
