@@ -51,7 +51,7 @@ The idea for Witchtanic Hellucinations came in early November when the Halloween
 
 # Live Demo 
 
-![A screenshot of the Witchtanic Hellucinations homepage on different screen sizes]()
+![A screenshot of the Witchtanic Hellucinations homepage on different screen sizes](assets/images/responsive-screens.png)
 
 **You can see a deployed version of my website [here](https://rafaela-wetzel.github.io/Witchtanic-Hellucinations/)**
 
@@ -97,6 +97,15 @@ The homepage is split up into four separate pages: the visible main, rules and c
 ### Wireframe 
 
 <img src="assets/readme-assets/Balsamiq Witchtanic Wireframe.png" style="height:40rem; width:40rem;" alt="Balsamiq Wireframe">
+
+The actual finished homepage turned out slightly different than in the first Balsamiq draft:
+
+- A rules page has been added
+- There are 16 instead of 20 playing cards to fit the width of the smallest screen better without the cards getting too small
+- The storyline text as well as the witch pictures are displayed in the modals instead of being visible on the basic main page
+- The design of the audio player as well as the countdown element is more minimalistic
+- The card match count is left out because I did not think it was really important after all
+- The levels of difficulty would be implemented in the future
 
 ## Surface
 
@@ -309,11 +318,13 @@ The result is the same for all three JS files.
 
 ![A screenshot of the Lighthouse result](assets/readme-assets/lighthouse.png)
 
+The Lighthouse scores for the other pages are higher.
+
 ## Bugs & Problems
 
 - For the contact `<form>` I added an event listener so that the user would be redirected to the contact confirmation page once 'Send' had been clicked. After a lot of research and even though I did not see any obvious errors with my own JS code it still did not work and the function had not been triggered. I solved this by adding the redirection page link to the EmailJS function code directly. 
 
-- When I would play the game and win the start modal would be displayed. A few seconds later the losing modal showed on top even if I had won. I assume that the countdown continued running in the background until it reached zero and triggered the losing modal. To solve this I set the `loseModal` variable to an empty `function() { }`.
+- When I would play the game and win the start modal would be displayed. A few seconds later the losing modal showed on top even if I had won. I assume that the countdown continued running in the background until it reached zero and triggered the losing modal. To solve this I set the `loseModal` variable to an empty `function() { }` within the `winGame()` function.
 
 ## Unfixed Bugs
 
