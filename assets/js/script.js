@@ -100,7 +100,7 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
   function stopTimer() {
     totalTime = null;
-    };
+    }
 
 // Credits: Tutorial [4]
 
