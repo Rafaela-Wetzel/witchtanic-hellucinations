@@ -88,7 +88,7 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
    * Creates a countdown from 40 to 0
    */
   function startTimer() {
-    const time = setInterval(function () {
+    var time = setInterval(function () {
       totalTime--;
       timer.innerText = totalTime;
       if (totalTime === 0) {
@@ -97,6 +97,10 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
       }
     }, 1000);
   }
+
+  function stopTimer() {
+    totalTime = null;
+    };
 
 // Credits: Tutorial [4]
 
@@ -184,27 +188,27 @@ memoryCards.forEach(card => card.addEventListener('click', flipCard));
 
   // Credits End: Tutorial [4]
 
+/**
+   * Opens a modal window that displays losing message;
+   * adds event listener that triggers a refresh of the page
+   * to the button that closes the modal window when clicked
+   */
+function loseGame() {
+  loseModal.style.display = 'block';
+
+  for (var i = 0; i < reloadPage.length; i++) {
+    reloadPage[i].addEventListener('click', reload);
+  }
+}
+
   /** 
    * Opens a modal window that displays winning message;
    * adds event listener that triggers a refresh of the page
    * to the button that closes the modal window when clicked
    */
   function winGame() {
+    stopTimer();
     winModal.style.display = 'block';
-    loseModal = function() { };
-
-    for (var i = 0; i < reloadPage.length; i++) {
-      reloadPage[i].addEventListener('click', reload);
-    }
-  }
-
-  /**
-   * Opens a modal window that displays losing message;
-   * adds event listener that triggers a refresh of the page
-   * to the button that closes the modal window when clicked
-   */
-  function loseGame() {
-    loseModal.style.display = 'block';
 
     for (var i = 0; i < reloadPage.length; i++) {
       reloadPage[i].addEventListener('click', reload);
