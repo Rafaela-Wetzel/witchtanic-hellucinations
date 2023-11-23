@@ -324,8 +324,6 @@ The Lighthouse scores for the other pages are higher.
 
 - For the contact `<form>` I added an event listener so that the user would be redirected to the contact confirmation page once 'Send' had been clicked. After a lot of research and even though I did not see any obvious errors with my own JS code it still did not work and the function had not been triggered. I solved this by adding the redirection page link to the EmailJS function code directly. 
 
-- When I would play the game and win the start modal would be displayed. A few seconds later the losing modal showed on top even if I had won. I assume that the countdown continued running in the background until it reached zero and triggered the losing modal. To solve this I set the `loseModal` variable to an empty `function() { }` within the `winGame()` function.
-
 ## Unfixed Bugs
 
 No unfixed bugs.
