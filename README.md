@@ -36,8 +36,9 @@ The idea for Witchtanic Hellucinations came in early November when the Halloween
   - [Contact Confirmation Page](#contact-confirmation-page)
 - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
-    - [Testing Homepage Functions](#testing-homepage-functions)
-    - [Testing Homepage Responsiveness](#testing-homepage-responsiveness)
+  - [Testing Homepage Functions](#testing-homepage-functions)
+  - [Testing Homepage Responsiveness](#testing-homepage-responsiveness)
+  - [Differences Between Browsers](#differences-between-browsers)
   - [Validator Testing](#validator-testing)
   - [Lighthouse](#lighthouse)
   - [Bugs & Problems](#bugs--problems)
@@ -233,16 +234,60 @@ I have tested the responsiveness of my homepage with Firefox, Google Chrome and 
 ## Testing Homepage Responsiveness
     
 **360px:** 
+
+The 'Witchtanic Hellucinations' header spreads over two rows above each other. The start, play audio and timer elements are positioned very close to each other to fit the width of the mobile screen. The playing cards' size is quite small so that the user can see the card board, control and navigation elements as well as the header in the browser window at one glance. 
   
+The rules box is quite narrow and spreads in length downwards to fit the slim width of the mobile screen.  
+
+The size of the message textarea is rather narrow and adjusted to the screen size.
+
+The header "Your deadly message was sent..." on the contact confirmation page spreads over two rows and the text paragraph is narrow in width.
+
+The size of the modal windows is narrow and strechted into length downwards as well is the text. The witch pictures are quite small. 
+
+The start modal button text "No, my beloved enchantress..." is quite high and spreads over three rows. 
+
 **576px:**  
+
+The header 'Witchtanic Hellucinations' now is shown in one row. The font size of the navigation elements and the gaps between the controls elements is bigger. The size of the playing cards increases. 
+
+The rules box as well as the textarea message field is getting wider. 
+
+The header "Your deadly message was sent..." now spreads in only one row and the paragraph text width increases.
+
+The start modal button text "No, my beloved enchantress..." is getting lower and now spreads over only two rows.
+
+All the start modal windows are getting wider so is the paragraph width. The pictures are growing in size.
   
 **768px:** 
+
+The 'Witchtanic Hellucinations' header, the navigation elements and the headings grow in font size.
+
+The playing cards' width increases so they look more like a square rather than being slightly stretched in height as seen with 576px.
+
+The rules box is getting wider.
+
+The paragraph text on the contact confirmation page now only spreads in one row.
+
+The modal window width and the witch pictures' size increases. The text paragraphs spread in width.  
   
 **992px:**
   
+The 'Witchtanic Hellucinations' header grows in font size.
+
+The gap between the navigation elements grows wider.
+
+The rules box is getting wider.
+
+All the start modal windows are getting wider so is the paragraph width. The game over picture is getting bigger. 
+
 **1200px:**
-     
-**General**
+
+The modal windows are growing in width.
+
+## Differences Between Browsers
+
+I noticed that the color of the outset border of the round audio element and timer and the border of the rules box is different in Firefox than in Chrome and Edge. In Firefox it tends to be a lighter grey whereas in Chrome and Edge it is a darker shade of grey. Also when the modal windows are displayed there is a thin orange line between each witch picture and the black solid border which is not visible in Chrome or Edge. The triangle audio play symbol is positioned lower within the round element in Firefox than in the other two browsers. The input fields on the contact page show a thin white line on the inside frame in Firefox that is not present in Chrome or Edge.
 
 ## Validator Testing
 
