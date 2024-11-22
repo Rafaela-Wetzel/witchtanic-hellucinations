@@ -14,6 +14,7 @@
     <link rel="icon" href="assets/favicons/cat-favicon.png" type="image/png">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -242,12 +243,19 @@
                 This project is for purposes of education only.
             </div>
             <div>
+                © Witchtanic Hellucinations <span id="copyright"></span>  
+            </div>
+            <div>
                 Design by Rafaela Wetzel
             </div>
         </div>
     </footer>
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/c28c3d1b4e.js" crossorigin="anonymous"></script>
+    <!-- Get current year for footer information -->
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
     <!-- Microne Music Player-->
     <script src="assets/js/microne.js"></script>
     <!-- JavaScript Link -->
