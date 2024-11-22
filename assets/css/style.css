@@ -19,7 +19,7 @@
 }
 
 .margin-06 {
-  margin: 0.6rem 0;
+  margin: 0.6rem 0rem;
 }
 
 body {
@@ -72,7 +72,7 @@ a:focus {
 .modal-content {
   background-color: #f5954e;
   margin: 4% auto;
-  padding: 1.25rem;
+  padding: 1.25rem 2rem;
   border: thick solid #000;
   box-shadow: 0.5rem 0.5rem 0.5rem #1f1d19;
   width: 80%;
@@ -185,7 +185,7 @@ a:focus {
   font-size: 1rem;
   color: #FA7819;
   text-align: center;
-  padding: 0.3rem 1.5rem;
+  padding: 0.3rem 1rem;
 }
 
 .button-style:hover,
@@ -405,6 +405,10 @@ a:focus {
   .win-modal-header-size {
     font-size: 3rem;
   }
+
+  .modal-content {
+    padding: 1.25rem 3rem;
+  }
   
   /* Main Styles */
 
@@ -479,11 +483,15 @@ a:focus {
     width: 18rem;
   }
   
+  .modal-content {
+    padding: 1.25rem 4rem;
+    width: 60%;
+  }
 
   /* Main Styles */
 
   .start-button-height {
-    height: 3rem;
+    height: 4rem;
   }
 
   /* Rules Page */
@@ -546,11 +554,11 @@ a:focus {
     height: 27rem;
     width: 20rem;
   }
-  
+
   /* Main Styles */
 
   .start-button-height {
-    height: 3rem;
+    height: 4rem;
   }
 
   /* Rules Page */
@@ -611,7 +619,7 @@ a:focus {
   /* Main Styles */
 
   .start-button-height {
-    height: 3rem;
+    height: 4rem;
   }
 
   /* Rules Page */
