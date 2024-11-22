@@ -53,7 +53,7 @@ The idea for Witchtanic Hellucinations came in early November when the Halloween
 
 ![A screenshot of the Witchtanic Hellucinations homepage on different screen sizes](assets/images/responsive-screens.png)
 
-**You can see a deployed version of my website [here](https://rafaela-wetzel.github.io/Witchtanic-Hellucinations/)**
+**You can see a deployed version of my website [here](https://rafaela-wetzel.github.io/witchtanic-hellucinations/)**
 
 # UX
 
@@ -338,7 +338,7 @@ The Witchtanic Hellucinations homepage was deployed through GitHub Pages. The st
 - Set the branch to *main* and * */ (root)* and click on *Save* 
 - After a few moments the live link shows at the top of the page.
 
-It can be found here: https://rafaela-wetzel.github.io/Witchtanic-Hellucinations/
+It can be found here: https://rafaela-wetzel.github.io/witchtanic-hellucinations/
 
 # Credits 
 
