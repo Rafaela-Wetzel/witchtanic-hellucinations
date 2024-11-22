@@ -312,7 +312,12 @@ a:focus {
 }
 
 .input-height {
-  height: 1.5rem;
+  height: 2rem;
+}
+
+.send-button-height {
+  height: 3rem !important;
+  width: 10rem !important;
 }
 
 /* Contact Confirmation Page */
